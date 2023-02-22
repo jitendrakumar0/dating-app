@@ -139,6 +139,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 400px) {
   .otp-input-fields {
   padding: 30px 40px;
@@ -149,3 +151,22 @@
       }
     }
   }
+
+  .bodyWrapper {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    & .bodyWrapperInner {
+      position: relative;
+      z-index: 1051;
+      width: 100%;
+      & .bosyWrapperMain {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        // transform: translate(0, 0);
+      }}}
