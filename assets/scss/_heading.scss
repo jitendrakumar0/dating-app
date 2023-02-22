@@ -1,0 +1,5 @@
+.innerHeading {
+	background: linear-gradient(to right, $theme1 0%, $theme2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
