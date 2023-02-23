@@ -39,10 +39,10 @@
     <meta property="og:url" content="">
     <meta property="og:title" content="Title here">
     <meta property="og:description" content="Discrption here">
-    <meta property="og:image" content="assets/img/logo/favicon-original.png">
-    <meta property="og:image:secure_url" content="assets/img/logo/favicon-original.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
+    <meta property="og:image" content="assets/img/logo/favicon-original.svg">
+    <meta property="og:image:secure_url" content="assets/img/logo/favicon-original.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-original.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.svg" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
     <!-- *Bootstrap Css* -->
@@ -58,19 +58,140 @@
 <body >
     <div class="bodyWrapper">
         <div class="bodyWrapperInner h-100">
-            <div class="bosyWrapperMain h-100">
+            <div class="bosyWrapperMain h-100 bg-light">
                 <!-- *Onboarding Section -->
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-4 bg-theme1">
-
+                        <div class="col-4 vh-100 px-0 bg-white leftProfileSide">
+                            <!-- *Top Nav* -->
+                            <nav class="navbar indexHeader py-3 h-80px">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand p-0 d-flex align-items-center rounded" href="javascript:;">
+                                        <div class="h-xl-50px h-40px w-xl-50px w-40px rounded-circle userImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div>
+                                        <div class="ms-2 text-white"><div class="fw-600 fs-xl-14 fs-13">Dating App</div><div class="fw-normal fs-xl-13 fs-12">ID-ZWXH5481</div></div>
+                                    </a>
+                                        <ul class="list-unstyled iconList d-flex align-items-center gap-4 m-0 p-0">
+                                            <li class="d-flex align-items-center justify-content-center innerList"><a class="nav-link text-white w-25px h-25px" href="javascript:;"><img src="assets/img/icon/category.svg" class="w-100" alt=""></a></li>
+                                            <li class="d-flex align-items-center justify-content-center innerList"><a class="nav-link text-white w-25px h-25px" href="javascript:;"><img src="assets/img/icon/toolkit.svg" class="w-100" alt=""></a></li>
+                                        </ul>
+                                </div>
+                            </nav>
+                            <!-- *Top Nav End* -->
+                            <!-- *Left Side Content -->
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-12 navTabPerent ">
+                                        <ul class="nav navTabs  nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item w-100" role="presentation">
+                                            <button class="nav-link rounded-0 text-black fw-600 fs-14 w-100  active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Matches</button>
+                                        </li>
+                                        <li class="nav-item w-100" role="presentation">
+                                            <button class="nav-link rounded-0 text-black fw-600 fs-14 w-100 " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Messages</button>
+                                        </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                <div class="row gap-3">
+                                                    <div class="col-12">
+                                                        <div class="card LikeCard border-0 rounded-5">
+                                                            <div class="card-body rounded-4 p-4">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/icon/heart.svg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <h5 class="card-title m-0 fs-16 fw-600"><span class="fw-bold text-theme2 fs-20">20</span> User Likes</h5>
+                                                                        <a href="javascript:;" class="text-decoration-none fs-12 text-muted stretched-link">Last updated 1 mins ago</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                <div class="row gap-3">
+                                                    <div class="col-12">
+                                                        <div class="card LikeCard border-0 rounded-5">
+                                                            <div class="card-body rounded-4 p-4 active">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <h5 class="card-title text-black fs-14 fw-600 m-0">Pooja</h5>
+                                                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link" data-bs-toggle="modal" data-bs-target="#exampleByPlan">Are You From</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="card LikeCard border-0 rounded-5">
+                                                            <div class="card-body rounded-4 p-4 active">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <h5 class="card-title text-black fs-14 fw-600 m-0">Neha</h5>
+                                                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link">I Am From India</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="card LikeCard border-0 rounded-5">
+                                                            <div class="card-body rounded-4 p-4">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <h5 class="card-title text-black fs-14 fw-600 m-0">Asha</h5>
+                                                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link">Are You From</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-8">Hanji</div>
+                        <div class="col-8">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- *Modals* -->
+        <!-- *******By Plan Modal******* -->
+        <div class="modal fade selectPlanModal" id="exampleByPlan" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleByPlanLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="fs-md-25 fs-20 w-100 text-white text-center fw-600 px-0" id="exampleByPlanLabel">Dating App <span class="text-light fs-10">Gold</span></div>
+                    <button type="button" class="text-light bg-transparent p-0 fs-35 fw-light border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close">+</button>
+                </div>
+                <div class="modal-body px-sm-4 px-3 pb-4">
+                    <div class="row gap-3">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE</button>
+                </div>
+                </div>
+            </div>
+        </div>
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

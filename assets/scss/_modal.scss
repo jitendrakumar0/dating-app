@@ -138,7 +138,19 @@
     }
   }
 }
-
+// **Select Plan Modal
+.selectPlanModal {
+  & .modal-dialog {
+    & .modal-content {
+      & .modal-header {
+      background-image: linear-gradient(to right, $theme1, $theme2);
+      & button {
+        transform: rotate(45deg);
+      }
+      }
+    }
+  }
+}
 
 
 @media screen and (max-width: 400px) {

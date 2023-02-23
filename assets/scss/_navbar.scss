@@ -5,3 +5,22 @@
     width: 100%;
     z-index: 5;
 }
+
+.indexHeader {
+    background-image: linear-gradient(to right, $theme1, $theme2);
+    & .navbar-brand {
+        transition: all 0.3s;
+        & .userImg {
+            transition: all 0.3s;
+            border: 2.5px solid $theme2;
+            & img {
+                object-fit: cover;
+            }
+        }
+        &:hover{
+            & .userImg{
+                border-color: $white;
+            }
+        }
+    }
+}
