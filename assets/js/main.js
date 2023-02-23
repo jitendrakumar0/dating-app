@@ -28,3 +28,39 @@ function handle_next_input(event) {
         document.querySelector("#_otp").innerText = _finalKey
     }
 }
+
+
+
+// *Swiper Slider
+
+var swiper = new Swiper(".cardslider", {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    center:true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        "@0.1": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        "@1.25": {
+            slidesPerView: 2,
+        },
+        "@1.50": {
+            slidesPerView: 3,
+        },
+    },
+
+});
