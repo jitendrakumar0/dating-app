@@ -87,3 +87,26 @@
     }
   }
 }
+
+.cardSection {
+  & .innersection{
+    & .LikeCard {
+      & .card-body {
+        position: relative;
+        & .card-title {
+          border-bottom: 0.6px solid rgba($black, 0.1);
+        }
+        &::before {
+          content: '';
+          width: 4px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: $theme2;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}

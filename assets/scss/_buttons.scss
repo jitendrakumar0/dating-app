@@ -11,8 +11,8 @@
     color: $white;
     border: none;
     border-radius: 50px;
-    &:hover{
-    background-image: linear-gradient(to right, rgba($theme1, 0.8), rgba($theme2, 0.8));
+    &:hover {
+        background-image: linear-gradient(to right, rgba($theme1, 0.8), rgba($theme2, 0.8));
     }
     &.googleBtn {
         background: transparent;
@@ -21,24 +21,29 @@
     }
 }
 
-
 .opetionBtn {
     background-color: $white;
     border: 1px solid $black;
     font-weight: 600;
     transition: all ease-in-out 0.3s;
     color: rgba($black, 0.8);
-    &:hover{
+    &:hover {
         color: $theme2;
         border-color: $theme1;
     }
 }
 
-
-
-
-
-
-
-
-
+.android_btn {
+    border-radius: 8px;
+    background-color: $white !important;
+    transition: 0.3s;
+    &:hover {
+        background-color: darken($white, 5) !important;
+    }
+    &.forWhite {
+        background-color: $black !important;
+        &:hover {
+            background-color: lighten($black, 5) !important;
+        }
+    }
+}

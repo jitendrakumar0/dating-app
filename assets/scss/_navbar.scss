@@ -4,6 +4,12 @@
     top: 0;
     width: 100%;
     z-index: 5;
+    & .navbar-nav {
+        & .nav-item {
+            & .nav-link {
+            }
+        }
+    }
 }
 
 .indexHeader {
