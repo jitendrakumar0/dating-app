@@ -148,6 +148,32 @@
         transform: rotate(45deg);
       }
       }
+      & .modal-body {
+        & .choosePackage {
+          & .card {
+            & .card-body {
+              & .form-check-input{
+                top: 7px;
+                right: 10px;
+                &:focus{
+                  border-color: rgba($black, 0.3) !important;
+                }
+                &:checked {
+                  background-color: $theme2;
+                  border-color: $theme2 !important;
+                }
+              }
+              & .planList {
+                & li {
+                  &::marker {
+                    content: "\2713";
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
