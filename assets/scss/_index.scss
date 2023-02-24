@@ -9,6 +9,9 @@
 
 .leftProfileSide {
   box-shadow: 0px 0px 20px rgba($theme1, 0.1);
+  & .leftcontentsideperent{
+    overflow: hidden auto;
+  }
 }
 
 
@@ -63,6 +66,25 @@
       & img {
         object-fit: cover;
       }
+      &.verifieduserImg {
+        position: relative;
+          transition: all 0.3s;
+          &::after{
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 14%;
+            right: -8px;
+            background-color: $white;
+            background-image: url(../img/icon/verified.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50px;
+            transition: all 0.3s;
+          }
+      }
     }
     &.active {
       & .liveUserImg{
@@ -80,6 +102,16 @@
           background-color: #2df187;
           border-radius: 50px;
           transition: all 0.3s;
+        }
+      }
+    }
+  }
+  &.matchCard {
+    & .card-body {
+      & .contentscard {
+        text-overflow: ellipsis;
+        & .card-title {
+          text-overflow: ellipsis;
         }
       }
     }
@@ -106,8 +138,94 @@
         }
       }
     }
-    & .swiper-wrapper {
-      // transform: unset;
+  }
+}
+
+
+
+// * maindashboard (Index Page)
+
+.maindashboard {
+  & .leftProfileSide {
+    width: 400px;
+  }
+  & .rightContentSide {
+    width: calc(100% - 400px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *categoryCard
+.categoryCard {
+  box-shadow: 0px 0px 20px rgba($black, 0.1);
+  transition: all 0.3s;
+  & .innerCard {
+    height: 250px;
+    & img {
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(0deg, rgba($black, 0.8) 5%, rgba($black, 0) 100%);
+      transition: all 0.3s;
+    }
+  }
+  & .cardheading {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  & .newprofile , & .profileFollow, &.cardheading {
+    transition: all 0.3s;
+  }
+  &:hover{
+    & .cardheading {
+      font-weight: 900 !important;
+    }
+    & .newprofile {
+      background-color: $theme2 !important;
+    }
+  }
+  &.disable {
+    position: relative;
+    cursor: pointer;
+    &::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      background: rgba($light, 0.6);
+      transition: all ease-in-out 0.4s;
+      opacity: 1;
+      visibility: visible;
+    }
+    &:hover{
+      &::after{
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    & .newprofile {
+      background-color: $theme1 !important;
     }
   }
 }

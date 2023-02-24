@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Bijarniadream Css* -->
     <link rel="stylesheet" href="assets/css/bijarniadream.min.css">
+    <!-- *Swiper Slider Css* -->
+    <link rel="stylesheet" href="assets/libs/swiperjs/swiper-bundle.min.css">
     <!-- *AOS Css* -->
     <link rel="stylesheet" href="assets/css/aos.min.css">
     <!-- *Custom Css* -->
@@ -60,97 +62,103 @@
         <div class="bodyWrapperInner h-100">
             <div class="bosyWrapperMain h-100 bg-light">
                 <!-- *Onboarding Section -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-4 vh-100 px-0 bg-white leftProfileSide">
-                            <!-- *Top Nav* -->
-                            <nav class="navbar indexHeader py-3 h-80px">
-                                <div class="container-fluid">
-                                    <a class="navbar-brand p-0 d-flex align-items-center rounded" href="javascript:;">
-                                        <div class="h-xl-50px h-40px w-xl-50px w-40px rounded-circle userImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div>
-                                        <div class="ms-2 text-white"><div class="fw-600 fs-xl-14 fs-13">Dating App</div><div class="fw-normal fs-xl-13 fs-12">ID-ZWXH5481</div></div>
-                                    </a>
-                                        <ul class="list-unstyled iconList d-flex align-items-center gap-4 m-0 p-0">
-                                            <li class="d-flex align-items-center justify-content-center innerList"><a class="nav-link text-white w-25px h-25px" href="javascript:;"><img src="assets/img/icon/category.svg" class="w-100" alt=""></a></li>
-                                            <li class="d-flex align-items-center justify-content-center innerList"><a class="nav-link text-white w-25px h-25px" href="javascript:;"><img src="assets/img/icon/toolkit.svg" class="w-100" alt=""></a></li>
-                                        </ul>
+                <div class="container-fluid maindashboard d-flex px-0">
+                        <!-- *!Left Side Bar -->
+                        <div class="vh-100 px-0 bg-white leftProfileSide">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <!-- *Top Nav* -->
+                                <div class="col-12">
+                                    <nav class="navbar indexHeader py-3 h-80px position-sticky top-0 zi-2">
+                                        <div class="container-fluid">
+                                            <a class="navbar-brand p-0 d-flex align-items-center rounded" href="javascript:;">
+                                                <div class="h-xl-50px h-40px w-xl-50px w-40px rounded-circle userImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div>
+                                                <div class="ms-2 text-white"><div class="fw-600 fs-xl-14 fs-13">Dating App</div><div class="fw-normal fs-xl-13 fs-12">ID-ZWXH5481</div></div>
+                                            </a>
+                                                <ul class="list-unstyled iconList d-flex align-items-center gap-4 m-0 p-0">
+                                                    <li class="d-flex align-items-center justify-content-center innerList"><a class="dashboardcategoryBtn text-white w-25px h-25px" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampletoolkit"><img src="assets/img/icon/toolkit.svg" class="w-100" alt=""></a></li>
+                                                    <li class="d-flex align-items-center justify-content-center innerList"><a class="dashboardcategoryBtn active text-white w-25px h-25px" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="assets/img/icon/category.svg" class="w-100" alt=""></a></li>
+                                                </ul>
+                                        </div>
+                                    </nav>
                                 </div>
-                            </nav>
-                            <!-- *Top Nav End* -->
-                            <!-- *Left Side Content -->
-                            <div class="container-fluid mt-2">
-                                <div class="row">
-                                    <div class="col-12 navTabPerent ">
-                                        <ul class="nav navTabs  nav-pills mb-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item w-100" role="presentation">
-                                            <button class="nav-link rounded-0 text-black fw-600 fs-14 w-100  active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Matches</button>
-                                        </li>
-                                        <li class="nav-item w-100" role="presentation">
-                                            <button class="nav-link rounded-0 text-black fw-600 fs-14 w-100 " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Messages</button>
-                                        </li>
-                                        </ul>
-                                        <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                                <div class="row gap-3">
-                                                    <div class="col-12">
-                                                        <div class="card LikeCard border-0 rounded-5">
-                                                            <div class="card-body rounded-4 p-4">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/icon/heart.svg" class="rounded-circle h-100 w-100" alt=""></div>
-                                                                    </div>
-                                                                    <div class="col">
-                                                                        <h5 class="card-title m-0 fs-16 fw-600"><span class="fw-bold text-theme2 fs-20">20</span> User Likes</h5>
-                                                                        <a href="javascript:;" class="text-decoration-none fs-12 text-muted stretched-link">Last updated 1 mins ago</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                                <div class="row gap-3">
-                                                    <div class="col-12">
-                                                        <div class="card LikeCard border-0 rounded-5">
-                                                            <div class="card-body rounded-4 p-4 active">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
-                                                                    </div>
-                                                                    <div class="col">
-                                                                        <h5 class="card-title text-black fs-14 fw-600 m-0">Pooja</h5>
-                                                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link" data-bs-toggle="modal" data-bs-target="#exampleByPlan">Are You From</a>
+                                <!-- *Top Nav End* -->
+                                <div class="col-12 flex-fill h-100 overflow-hidden">
+                                    <div class="h-100 leftcontentsideperent">
+                                    <!-- *Match & Message Tabs Content -->
+                                        <div class="row mx-0 pb-4 pt-3 messageAndmatch d-none">
+                                            <div class="col-12 navTabPerent ">
+                                                <ul class="nav navTabs  nav-pills mb-3 position-sticky zi-2 bg-white top-0px" id="pills-tab" role="tablist">
+                                                <li class="nav-item w-100" role="presentation">
+                                                    <button class="nav-link rounded-0 text-black fw-600 fs-14 w-100  active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Matches</button>
+                                                </li>
+                                                <li class="nav-item w-100" role="presentation">
+                                                    <button class="nav-link rounded-0 text-black fw-600 fs-14 w-100 " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Messages</button>
+                                                </li>
+                                                </ul>
+                                                <div class="tab-content" id="pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                        <div class="row gap-3">
+                                                            <div class="col-12">
+                                                                <div class="card LikeCard matchCard border-0 rounded-5">
+                                                                    <div class="card-body rounded-4 p-4">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/icon/heart.svg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                            </div>
+                                                                            <div class="col contentscard text-nowrap overflow-hidden">
+                                                                                <h5 class="card-title m-0 fs-16 fw-600 overflow-hidden w-95"><span class="fw-bold text-theme2 fs-20">20</span> User Likes</h5>
+                                                                                <a href="javascript:;" class="text-decoration-none fs-12 text-muted stretched-link w-95 overflow-hidden">Last updated 1 mins ago</a>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <div class="card LikeCard border-0 rounded-5">
-                                                            <div class="card-body rounded-4 p-4 active">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
-                                                                    </div>
-                                                                    <div class="col">
-                                                                        <h5 class="card-title text-black fs-14 fw-600 m-0">Neha</h5>
-                                                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link">I Am From India</a>
+                                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                        <div class="row gap-3">
+                                                            <div class="col-12">
+                                                                <div class="card LikeCard matchCard border-0 rounded-5">
+                                                                    <div class="card-body rounded-4 p-4 active">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                            </div>
+                                                                            <div class="col contentscard text-nowrap overflow-hidden">
+                                                                                <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Pooja</h5>
+                                                                                <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link w-95 overflow-hidden" data-bs-toggle="modal" data-bs-target="#exampleByPlan">Are You From</a>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="card LikeCard border-0 rounded-5">
-                                                            <div class="card-body rounded-4 p-4">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                            <div class="col-12">
+                                                                <div class="card LikeCard matchCard border-0 rounded-5">
+                                                                    <div class="card-body rounded-4 p-4 active">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                            </div>
+                                                                            <div class="col contentscard text-nowrap overflow-hidden">
+                                                                                <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Neha</h5>
+                                                                                <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link w-95 overflow-hidden">I Am From India</a>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="col">
-                                                                        <h5 class="card-title text-black fs-14 fw-600 m-0">Asha</h5>
-                                                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link">Are You From</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="card LikeCard matchCard border-0 rounded-5">
+                                                                    <div class="card-body rounded-4 p-4">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                            </div>
+                                                                            <div class="col contentscard text-nowrap overflow-hidden">
+                                                                                <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Asha</h5>
+                                                                                <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link w-95 overflow-hidden">Are You From</a>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -159,14 +167,144 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    <!-- *Match & Message Tabs Content End -->
+
+                                    <!-- *Category Tab Content Start -->
+                                        <div class="row mx-0 g-3 pb-4 pt-3">
+                                            <div class="col-12">
+                                                <div class="card LikeCard matchCard border-0 rounded-5">
+                                                    <div class="card-body rounded-4 p-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                                <div class="liveUserImg verifieduserImg w-90px h-90px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                            </div>
+                                                            <div class="col contentscard text-nowrap overflow-hidden">
+                                                                <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Get Verified On Dating</h5>
+                                                                <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link w-95 overflow-hidden" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Phone Verified</a>
+                                                                <div class="mt-1"><button type="button" class="mainBtn px-4 fs-md-14 fs-12 py-1">TRY NOW</button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-black fw-bold fs-16">Welcome to Explore
+                                                <div class="fs-14 fw-500">My Vibe...</div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                            <img src="assets/img/index/profileBg.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                        </div>
+                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
+                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                            <img src="assets/img/index/songmood.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                        </div>
+                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
+                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-12">
+                                                <div class="card categoryCard overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard  rounded-4 p-0 position-relative">
+                                                            <img src="assets/img/index/Verified.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                        </div>
+                                                        <div class="position-absolute bottom-10px end-10px"><button type="button" class="mainBtn px-4 fs-md-14 fs-12">TRY NOW</button></div>
+                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-40px"><img src="assets/img/icon/verified.svg" class="w-100 h-100" alt=""></span></div>
+                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Get Verified On Dating<div class="text-white-50">Phone Verified</div></div>
+                                                    </a>
+                                                </div>
+                                            </div> -->
+                                            <div class="col-12">
+                                                <div class="card categoryCard overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard  rounded-4 p-0 position-relative"><img src="assets/img/index/coffeecup.jpg" class="w-100 h-100 rounded-4" alt=""></div>
+                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Coffee Date</div>
+                                                        <div class="position-absolute bottom-10px end-10px">
+                                                            <div class="row mx-0 align-items-center">
+                                                                <div class="col text-white fw-600 fs-14">Take me to your favorite cafe<div class="text-white-50">Discover</div></div>
+                                                                <div class="col-auto"><button type="button" class="mainBtn py-1 px-4 fs-md-14 fs-12">TRY NOW</button></div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                            <img src="assets/img/index/coffee.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                        </div>
+                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
+                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                            <img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                        </div>
+                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
+                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                            <img src="assets/img/index/profileBg.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                        </div>
+                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
+                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                    <a href="javascript:;" class="text-decoration-none position-relative">
+                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                            <img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                        </div>
+                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
+                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- *Category Tab Content End -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8">
-
+                        <!-- *! Left Side Bar End-->
+                        <!-- *! Right Side Start -->
+                        <div class="rightContentSide p-3">
                         </div>
-                    </div>
+                        <!-- *! Right Side End -->
                 </div>
             </div>
         </div>
@@ -174,76 +312,167 @@
 
 
     <!-- *Modals* -->
-        <!-- *******By Plan Modal******* -->
-        <div class="modal fade selectPlanModal" id="exampleByPlan" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleByPlanLabel" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                <div class="modal-header border-0">
-                    <div class="fs-md-25 fs-20 w-100 text-white text-center fw-600 px-0" id="exampleByPlanLabel">Dating App <span class="text-light fs-10">Gold</span></div>
-                    <button type="button" class="text-light bg-transparent p-0 fs-35 fw-light border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close">+</button>
-                </div>
-                <div class="modal-body px-sm-4 px-3 pb-4">
-                    <form class="row g-3 choosePackage">
-                        <div class="col-12 fs-14 fw-500">Select your <span class="fw-bold">Dating</span> Premium Membership</div>
-                        <div class="col-lg-4">
-                            <div class="card LikeCard h-100 border-0 rounded-5">
-                                <div class="card-body form-check form-switch rounded-4 position-relative p-4 h-100">
-                                    <input class="form-check-input position-absolute shadow-none" role="switch" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <div class="row gap-3">
-                                        <div class="col-12 card-title text-theme2 fs-md-20 fs-sm-16 fs-14 fw-bold m-0">Basic</div>
-                                        <div class="col-12 fs-14 text-black fw-600">6-Month Plan</div>
-                                        <div class="col-12">
-                                            <ul class="m-0 fs-12 text-muted fw-500 planList ps-3">
-                                                <li class="ps-2">View unlimited photos</li>
-                                                <li class="ps-2">Unlimited messaging</li>
-                                                <li class="ps-2">See who's viewed you</li>
-                                                <li class="ps-2">Distance search</li>
-                                                <li class="ps-2">Detailed personality profile</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 fs-25 fw-bolder text-center text-black">₹1599/<span class="fs-10 fw-normal">Month</span></div>
-                                        <div class="col-12 text-center"><label class="form-check-label mainBtn px-sm-5 px-4 fs-md-14 fs-12" for="flexRadioDefault1">Select</label></div>
+    <!-- *******By Plan Modal******* -->
+    <div class="modal fade selectPlanModal" id="exampleByPlan" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleByPlanLabel" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 py-lg-3 py-sm-2 py-0">
+                <div class="fs-md-25 fs-20 w-100 text-white text-center fw-600 px-0" id="exampleByPlanLabel">Dating App <span class="text-light fs-10">Gold</span></div>
+                <button type="button" class="text-light bg-transparent p-0 fs-35 fw-light border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close">+</button>
+            </div>
+            <div class="modal-body px-sm-4 px-3 pb-4">
+                <form class="row g-3 choosePackage">
+                    <div class="col-12 fs-14 fw-500">Select your <span class="fw-bold">Dating</span> Premium Membership</div>
+                    <div class="col-lg-4">
+                        <div class="card LikeCard h-100 border-0 rounded-5">
+                            <div class="card-body form-check form-switch rounded-4 position-relative p-4 py-5 h-100">
+                                <input class="form-check-input position-absolute shadow-none" role="switch" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <div class="row gap-3">
+                                    <div class="col-12 card-title text-theme2 fs-lg-25 fs-md-20 fs-sm-16 fs-14 fw-bold m-0">Basic</div>
+                                    <div class="col-12 fs-14 text-black fw-600">6-Month Plan</div>
+                                    <div class="col-12">
+                                        <ul class="m-0 fs-12 text-muted fw-500 planList ps-3">
+                                            <li class="ps-2">View unlimited photos</li>
+                                            <li class="ps-2">Unlimited messaging</li>
+                                            <li class="ps-2">See who's viewed you</li>
+                                            <li class="ps-2">Distance search</li>
+                                            <li class="ps-2">Detailed personality profile</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 fs-25 fw-bolder text-center text-black">₹1599/<span class="fs-10 fw-normal text-muted">Month</span></div>
+                                    <div class="col-12 text-center"><label class="form-check-label mainBtn px-sm-5 px-4 fs-md-14 fs-12 rounded-4" for="flexRadioDefault1">Select</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card LikeCard h-100 border-0 rounded-5">
+                            <div class="card-body form-check form-switch rounded-4 position-relative p-4 py-5 h-100">
+                                <input class="form-check-input position-absolute shadow-none" role="switch" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <div class="row gap-3">
+                                    <div class="col-12 card-title text-theme2 fs-lg-25 fs-md-20 fs-sm-16 fs-14 fw-bold m-0">Premium</div>
+                                    <div class="col-12 fs-14 text-black fw-600">12-Month Plan</div>
+                                    <div class="col-12">
+                                        <ul class="m-0 fs-12 text-muted fw-500 planList ps-3">
+                                            <li class="ps-2">View unlimited photos</li>
+                                            <li class="ps-2">Unlimited messaging</li>
+                                            <li class="ps-2">See who's viewed you</li>
+                                            <li class="ps-2">Distance search</li>
+                                            <li class="ps-2">Detailed personality profile</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 text-center"><div class="d-inline-block bg-black text-white fw-bold fs-lg-20 fs-16 rounded-2 px-3 py-1">50% off <span class="fs-10 fw-normal">the first month</span></div></div>
+                                    <div class="col-12 fs-25 fw-bolder text-center text-theme1">₹499/<span class="fs-10 fw-normal text-muted">Month</span></div>
+                                    <div class="col-12 fs-9 text-center text-muted">for the first month, then ₹ 1199 /month</div>
+                                    <div class="col-12 text-center"><label class="form-check-label mainBtn px-sm-5 px-4 fs-md-14 fs-12 rounded-4" for="flexRadioDefault2">Select Plan</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card LikeCard h-100 border-0 rounded-5">
+                            <div class="card-body form-check form-switch rounded-4 position-relative p-4 py-5 h-100">
+                                <input class="form-check-input position-absolute shadow-none" role="switch" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <div class="row gap-3">
+                                    <div class="col-12 card-title text-theme2 fs-lg-25 fs-md-20 fs-sm-16 fs-14 fw-bold m-0">GOLD</div>
+                                    <div class="col-12 fs-14 text-black fw-600">6-Month Plan</div>
+                                    <div class="col-12">
+                                        <ul class="m-0 fs-12 text-muted fw-500 planList ps-3">
+                                            <li class="ps-2">View unlimited photos</li>
+                                            <li class="ps-2">Unlimited messaging</li>
+                                            <li class="ps-2">See who's viewed you</li>
+                                            <li class="ps-2">Distance search</li>
+                                            <li class="ps-2">Detailed personality profile</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 fs-25 fw-bolder text-center text-black">₹1599/<span class="fs-10 fw-normal text-muted">Month</span></div>
+                                    <div class="col-12 text-center"><label class="form-check-label mainBtn px-sm-5 px-4 fs-md-14 fs-12 rounded-4" for="flexRadioDefault3">Select</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- *By Plan Modal End -->
+    <!-- *******ToolKit Modal******* -->
+    <div class="modal fade" id="exampletoolkit" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampletoolkitLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="exampletoolkitLabel">Safety Toolkit</div>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body px-sm-4 px-3 pb-4">
+                <form class="row g-3 choosePackage">
+                    <div class="col-6"><a href="javascript:;" class="mainBtn googleBtn fs-md-14 fs-12 w-100 d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#examplereport"><span class="w-25px d-flex"><img src="assets/img/icon/report.svg" class="w-100" alt=""></span>Report</a></div>
+                    <div class="col-6"><a href="javascript:;" class="mainBtn googleBtn fs-md-14 fs-12 w-100 d-flex align-items-center gap-2"><span class="w-25px d-flex"><img src="assets/img/icon/idea.svg" class="w-100" alt=""></span>Safety Tips</a></div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">CANCLE</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- *ToolKit Modal End -->
+    <!-- *******ToolKit Modal******* -->
+    <div class="modal fade" id="examplereport" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplereportLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplereportLabel">Report Someone</div>
+                <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-sm-4 px-3 pb-4">
+                <form class="row g-3">
+                    <div class="col-12 fs-14 text-muted fw-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum!</div>
+                    <div class="col-12">
+                        <div class="card LikeCard matchCard border-0 rounded-5">
+                            <div class="card-body rounded-4 p-4 active">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                    </div>
+                                    <div class="col contentscard text-nowrap overflow-hidden">
+                                        <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Pooja</h5>
+                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link w-95 overflow-hidden">Are You From</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card LikeCard h-100 border-0 rounded-5">
-                                <div class="card-body form-check form-switch rounded-4 position-relative p-0 h-100">
-                                    <input class="form-check-input position-absolute shadow-none" role="switch" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                    <label class="form-check-label p-4 w-100 h-100" for="flexRadioDefault2">Premium </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card LikeCard h-100 border-0 rounded-5">
-                                <div class="card-body form-check form-switch rounded-4 position-relative p-0 h-100">
-                                    <input class="form-check-input position-absolute shadow-none" role="switch" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                    <label class="form-check-label p-4 w-100 h-100" for="flexRadioDefault3">Premium </label>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-lg-4">
-                            <div class="card LikeCard h-100 border-0 rounded-5">
-                                <div class="card-body rounded-4 p-4">
-                                    <div class="card-title text-center text-black fs-md-20 fs-sm-16 fs-14 fw-bold mb-3 pb-1">GOLD</div>
-                                    <div class="card-text fs-sm-14 fs-12 text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore error, facilis ea unde porro voluptatem voluptates, tenetur numquam non est accusantium expedita iste ab suscipit soluta beatae sapiente sequi quam saepe ad aliquid alias? Sit, nobis.</div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </form>
-                </div>
-                <div class="modal-footer border-0 justify-content-center">
-                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE</button>
-                </div>
-                </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">CANCLE</button>
+            </div>
             </div>
         </div>
+    </div>
+    <!-- *ToolKit Modal End -->
+    <!-- *?Offcanvas Of Verified Dating -->
+    <div class="offcanvas datingPrivecyOffcanvas border-0 offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <!-- *000 -->
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-12">Pending</div>
+            </div>
+        </div>
+    </div>
+    <!-- *?Offcanvas Of Verified Dating End -->
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *AOS Js* -->
     <script src="assets/libs/aos/js/aos.min.js"></script>
+    <!-- *Swiper Slider Js* -->
+    <script src="assets/libs/swiperjs/swiper-bundle.min.js"></script>
     <!--*Custom Js* -->
     <script src="assets/js/main.js"></script>
 </body>
