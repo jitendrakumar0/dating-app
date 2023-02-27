@@ -6,13 +6,13 @@
   }
 }
 .contentForm {
-  & .form-control,
-  .form-select {
+  & .form-control, & .form-select {
     border-bottom: 1px solid $theme2 !important;
     &:focus-visible {
       border-color: $theme1;
     }
   }
+
   & .selecotr-item {
     & .selector-item_radio {
       appearance: none;
@@ -30,6 +30,31 @@
       color: $white;
       border-color: $theme1;
       transform: translateY(-1px);
+    }
+    &.reportItem {
+      & .selector-item_label {
+        border: 2px solid transparent;
+      }
+      & .liveUserImg {
+        border: 2px solid transparent;
+      }
+      
+      & .selector-item_radio:checked + .selector-item_label {
+        background-image: none;
+        border-color: $theme1;
+        background-color: $light;
+        & .liveUserImg {
+          border-color: $danger;
+        }
+        & .card-title {
+        color: $danger !important;
+        }
+      }
+    }
+    &.reportreason {
+      & .selector-item_label {
+        border: 2px solid rgba($black, 0.1);
+      }
     }
   }
   & .form-check {
@@ -101,6 +126,12 @@
       width: 20px;
       height: 3px;
       background-color: rgba($black, 0.3);
+    }
+  }
+  & .reportcomment {
+    border: 2px solid rgba($black, 0.1);
+    &:focus-visible {
+      outline-color: rgba($black, 0.1);
     }
   }
 }
@@ -178,6 +209,25 @@
   }
 }
 
+// * feedbackModal
+.feedbackModal {
+  & .modal-dialog  {
+    & .modal-content {
+      & .modal-body {
+        & .blockeduserimg {
+          & img {
+            object-fit: cover;
+          }
+        }
+        & .blockedimg {
+          inset: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 400px) {
   .otp-input-fields {
@@ -222,4 +272,70 @@
     top: unset !important;
     width: 400px;
     bottom: 0;
+    & .offcanvas-header {
+    box-shadow: 0px 0px 20px rgba($theme1, 0.1);
+    }
+    & .offcanvas-body {
+      & .LikeCard {
+        position: relative;
+        overflow: hidden;
+        &::before{
+          content: "50%off";
+          font-size: 10px;
+          background: $black;
+          color: $white;
+          font-weight: 500;
+          display: inline-block;
+          position: absolute;
+          top: -8px;
+          text-align: center;
+          width: 100px;
+          right: -37px;
+          padding: 6px;
+          padding-top: 20px;
+          transform: rotate(45deg);
+      }
+      &.platinumcard {
+        &::before{
+          background: $theme2;
+        }
+      }
+      &.goldcard {
+        &::before{
+          background: $theme1;
+        }
+      }
+        }
+      & .form {
+        & .inpulable {
+          transition: all 0.3s;
+          position: relative;
+          &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $theme1;
+            width: 0px;
+            height: 1.5px;
+            transition: all 0.4s;
+          }
+          & .rightarrowimg {
+            filter: brightness(0);
+            transition: all 0.3s;
+          }
+          &:hover{
+            color: $theme2 !important;
+            border-color: $theme1;
+            &::before{
+              width: 100%;
+            }
+            cursor: pointer;
+            & .rightarrowimg {
+              filter: brightness(1);
+            }
+          }
+        }
+      }
+    }
   }

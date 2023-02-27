@@ -49,10 +49,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Bijarniadream Css* -->
     <link rel="stylesheet" href="assets/css/bijarniadream.min.css">
-    <!-- *Swiper Slider Css* -->
-    <link rel="stylesheet" href="assets/libs/swiperjs/swiper-bundle.min.css">
-    <!-- *AOS Css* -->
-    <link rel="stylesheet" href="assets/css/aos.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
@@ -70,13 +66,14 @@
                                 <div class="col-12">
                                     <nav class="navbar indexHeader py-3 h-80px position-sticky top-0 zi-2">
                                         <div class="container-fluid">
-                                            <a class="navbar-brand p-0 d-flex align-items-center rounded" href="javascript:;">
+                                            <a class="navbar-brand p-0 d-flex align-items-center rounded" href="javascript:;" data-bs-toggle="modal" data-bs-target="#examplereport">
                                                 <div class="h-xl-50px h-40px w-xl-50px w-40px rounded-circle userImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div>
-                                                <div class="ms-2 text-white"><div class="fw-600 fs-xl-14 fs-13">Dating App</div><div class="fw-normal fs-xl-13 fs-12">ID-ZWXH5481</div></div>
+                                                <div class="ms-2 text-white"><div class="fw-600 fs-xl-14 fs-13">Pooja</div><div class="fw-normal fs-xl-13 fs-12">ID-ZWXH5481</div></div>
                                             </a>
                                                 <ul class="list-unstyled iconList d-flex align-items-center gap-4 m-0 p-0">
                                                     <li class="d-flex align-items-center justify-content-center innerList"><a class="dashboardcategoryBtn text-white w-25px h-25px" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampletoolkit"><img src="assets/img/icon/toolkit.svg" class="w-100" alt=""></a></li>
-                                                    <li class="d-flex align-items-center justify-content-center innerList"><a class="dashboardcategoryBtn active text-white w-25px h-25px" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="assets/img/icon/category.svg" class="w-100" alt=""></a></li>
+                                                    <li class="d-flex align-items-center justify-content-center innerList"><a class="dashboardcategoryBtn active text-white w-25px h-25px" role="button"><img src="assets/img/icon/category.svg" class="w-100" alt=""></a></li>
+                                                    <!-- <li class="d-flex align-items-center justify-content-center innerList"><a class="dashboardcategoryBtn active text-white w-25px h-25px" href="javascript:;" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/img/icon/category.svg" class="w-100" alt=""></a></li> -->
                                                 </ul>
                                         </div>
                                     </nav>
@@ -85,7 +82,7 @@
                                 <div class="col-12 flex-fill h-100 overflow-hidden">
                                     <div class="h-100 leftcontentsideperent">
                                     <!-- *Match & Message Tabs Content -->
-                                        <div class="row mx-0 pb-4 pt-3 messageAndmatch d-none">
+                                        <div class="row mx-0 pb-4 pt-3 d-none messageAndmatch">
                                             <div class="col-12 navTabPerent ">
                                                 <ul class="nav navTabs  nav-pills mb-3 position-sticky zi-2 bg-white top-0px" id="pills-tab" role="tablist">
                                                 <li class="nav-item w-100" role="presentation">
@@ -137,7 +134,7 @@
                                                                     <div class="card-body rounded-4 p-4 active">
                                                                         <div class="row align-items-center">
                                                                             <div class="col-auto">
-                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic2small.jpg" class="rounded-circle h-100 w-100" alt=""></div>
                                                                             </div>
                                                                             <div class="col contentscard text-nowrap overflow-hidden">
                                                                                 <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Neha</h5>
@@ -152,10 +149,10 @@
                                                                     <div class="card-body rounded-4 p-4">
                                                                         <div class="row align-items-center">
                                                                             <div class="col-auto">
-                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                                <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic3small.jpg" class="rounded-circle h-100 w-100" alt=""></div>
                                                                             </div>
                                                                             <div class="col contentscard text-nowrap overflow-hidden">
-                                                                                <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Asha</h5>
+                                                                                <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Avi</h5>
                                                                                 <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link w-95 overflow-hidden">Are You From</a>
                                                                             </div>
                                                                         </div>
@@ -190,108 +187,112 @@
                                             <div class="col-12 text-black fw-bold fs-16">Welcome to Explore
                                                 <div class="fs-14 fw-500">My Vibe...</div>
                                             </div>
-                                            <div class="col-6">
-                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
-                                                            <img src="assets/img/index/profileBg.jpg" class="w-100 h-100 rounded-4" alt="">
+                                            <div class="col-12 px-0 row mx-0 g-3 nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <div class="col-6">
+                                                    <div class="nav-link active p-0" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                        <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                            <a href="javascript:;" class="text-decoration-none position-relative">
+                                                                <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                                    <img src="assets/img/index/profileBg.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                                </div>
+                                                                <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                                <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
+                                                                <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                                <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                            </a>
                                                         </div>
-                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
-                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
-                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
-                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
-                                                    </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
-                                                            <img src="assets/img/index/songmood.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                <div class="col-6">
+                                                    <div class="nav-link p-0" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                                        <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                            <a href="javascript:;" class="text-decoration-none position-relative">
+                                                                <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                                    <img src="assets/img/index/songmood.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                                </div>
+                                                                <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                                <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
+                                                                <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                                <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                            </a>
                                                         </div>
-                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
-                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
-                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
-                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
-                                                    </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- <div class="col-12">
-                                                <div class="card categoryCard overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard  rounded-4 p-0 position-relative">
-                                                            <img src="assets/img/index/Verified.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                <div class="col-12">
+                                                    <div class="nav-link p-0" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
+                                                        <div class="card categoryCard overflow-hidden border-0 rounded-4">
+                                                            <a href="javascript:;" class="text-decoration-none position-relative">
+                                                                <div class="card-body innerCard  rounded-4 p-0 position-relative"><img src="assets/img/index/coffeecup.jpg" class="w-100 h-100 rounded-4" alt=""></div>
+                                                                <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Coffee Date</div>
+                                                                <div class="position-absolute bottom-10px end-10px">
+                                                                    <div class="row mx-0 align-items-center">
+                                                                        <div class="col text-white fw-600 fs-14">Take me to your favorite cafe<div class="text-white-50">Discover</div></div>
+                                                                        <div class="col-auto"><button type="button" class="mainBtn py-1 px-4 fs-md-14 fs-12">TRY NOW</button></div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
                                                         </div>
-                                                        <div class="position-absolute bottom-10px end-10px"><button type="button" class="mainBtn px-4 fs-md-14 fs-12">TRY NOW</button></div>
-                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-40px"><img src="assets/img/icon/verified.svg" class="w-100 h-100" alt=""></span></div>
-                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Get Verified On Dating<div class="text-white-50">Phone Verified</div></div>
-                                                    </a>
+                                                    </div>
                                                 </div>
-                                            </div> -->
-                                            <div class="col-12">
-                                                <div class="card categoryCard overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard  rounded-4 p-0 position-relative"><img src="assets/img/index/coffeecup.jpg" class="w-100 h-100 rounded-4" alt=""></div>
-                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Coffee Date</div>
-                                                        <div class="position-absolute bottom-10px end-10px">
-                                                            <div class="row mx-0 align-items-center">
-                                                                <div class="col text-white fw-600 fs-14">Take me to your favorite cafe<div class="text-white-50">Discover</div></div>
-                                                                <div class="col-auto"><button type="button" class="mainBtn py-1 px-4 fs-md-14 fs-12">TRY NOW</button></div>
-                                                            </div>
+                                                <div class="col-6">
+                                                    <div class="nav-link p-0" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                                        <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                            <a href="javascript:;" class="text-decoration-none position-relative">
+                                                                <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                                    <img src="assets/img/index/coffee.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                                </div>
+                                                                <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                                <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
+                                                                <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                                <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                            </a>
                                                         </div>
-                                                    </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
-                                                            <img src="assets/img/index/coffee.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                <div class="col-6">
+                                                    <div class="nav-link p-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                                        <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                            <a href="javascript:;" class="text-decoration-none position-relative">
+                                                                <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                                    <img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                                </div>
+                                                                <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                                <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
+                                                                <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                                <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                            </a>
                                                         </div>
-                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
-                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
-                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
-                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
-                                                    </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
-                                                            <img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                <div class="col-6">
+                                                    <div class="nav-link p-0" id="v-pills-message-tab" data-bs-toggle="pill" data-bs-target="#v-pills-message" type="button" role="tab" aria-controls="v-pills-message" aria-selected="false">
+                                                        <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                            <a href="javascript:;" class="text-decoration-none position-relative">
+                                                                <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                                    <img src="assets/img/index/coffee.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                                </div>
+                                                                <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                                <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
+                                                                <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                                <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                            </a>
                                                         </div>
-                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
-                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
-                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
-                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
-                                                    </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
-                                                            <img src="assets/img/index/profileBg.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                <div class="col-6">
+                                                    <div class="nav-link p-0" id="v-pills-setting-tab" data-bs-toggle="pill" data-bs-target="#v-pills-setting" type="button" role="tab" aria-controls="v-pills-setting" aria-selected="false">
+                                                        <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
+                                                            <a href="javascript:;" class="text-decoration-none position-relative">
+                                                                <div class="card-body innerCard rounded-4 p-0 position-relative">
+                                                                    <img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-4" alt="">
+                                                                </div>
+                                                                <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
+                                                                <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
+                                                                <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
+                                                                <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
+                                                            </a>
                                                         </div>
-                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
-                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Looking For Love</div>
-                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
-                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="card categoryCard disable overflow-hidden border-0 rounded-4">
-                                                    <a href="javascript:;" class="text-decoration-none position-relative">
-                                                        <div class="card-body innerCard rounded-4 p-0 position-relative">
-                                                            <img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-4" alt="">
-                                                        </div>
-                                                        <div class="newprofile fs-10 text-white fw-600 bg-theme1 px-2 py-1 rounded-2 position-absolute top-10px start-10px">NEW</div>
-                                                        <div class="cardheading fs-20 text-white fw-bold rounded-2 position-absolute w-100 text-center p-2">Music Mood</div>
-                                                        <div class="profileFollow fs-14 text-white fw-500 py-1 rounded-2 position-absolute top-10px end-10px d-flex align-items-center gap-1"><span class="d-flex h-16px"><img src="assets/img/header/logo.svg" class="w-100 h-100" alt=""></span> 117</div>
-                                                        <div class="text-white fw-600 fs-14 position-absolute bottom-10px start-10px">Add your anthem!<div class="text-white-50">Spotify</div></div>
-                                                    </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -303,6 +304,17 @@
                         <!-- *! Left Side Bar End-->
                         <!-- *! Right Side Start -->
                         <div class="rightContentSide p-3">
+                            <div class="row">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">Home</div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">852</div>
+                                    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">profile</div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">right</div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">Byy</div>
+                                    <div class="tab-pane fade" id="v-pills-message" role="tabpanel" aria-labelledby="v-pills-message-tab" tabindex="0">left</div>
+                                    <div class="tab-pane fade" id="v-pills-setting" role="tabpanel" aria-labelledby="v-pills-setting-tab" tabindex="0">atlast</div>
+                                </div>
+                            </div>
                         </div>
                         <!-- *! Right Side End -->
                 </div>
@@ -400,6 +412,7 @@
         </div>
     </div>
     <!-- *By Plan Modal End -->
+
     <!-- *******ToolKit Modal******* -->
     <div class="modal fade" id="exampletoolkit" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampletoolkitLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -415,64 +428,458 @@
                 </form>
             </div>
             <div class="modal-footer border-0 justify-content-center">
-                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">CANCLE</button>
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">CANCEL</button>
             </div>
             </div>
         </div>
     </div>
     <!-- *ToolKit Modal End -->
-    <!-- *******ToolKit Modal******* -->
+
+    <!-- *******Report Modal******* -->
     <div class="modal fade" id="examplereport" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplereportLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
             <div class="modal-header border-0 ">
                 <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplereportLabel">Report Someone</div>
-                <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
-            <div class="modal-body px-sm-4 px-3 pb-4">
+            <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
                 <form class="row g-3">
-                    <div class="col-12 fs-14 text-muted fw-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum!</div>
+                    <div class="col-12 fs-14 text-muted fw-600 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum!</div>
                     <div class="col-12">
-                        <div class="card LikeCard matchCard border-0 rounded-5">
-                            <div class="card-body rounded-4 p-4 active">
+                        <div class="card LikeCard matchCard border-0 rounded-5 form-check px-0 selecotr-item reportItem">
+                            <input type="radio" id="radio01" name="selector" class="form-check-input selector-item_radio">
+                            <label for="radio01" class="card-body rounded-4 p-md-4 p-3 selector-item_label">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt=""></div>
                                     </div>
                                     <div class="col contentscard text-nowrap overflow-hidden">
                                         <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Pooja</h5>
-                                        <a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link w-95 overflow-hidden">Are You From</a>
                                     </div>
                                 </div>
-                            </div>
+                            </label>
                         </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card LikeCard matchCard border-0 rounded-5 form-check px-0 selecotr-item reportItem">
+                            <input type="radio" id="radio02" name="selector" class="form-check-input selector-item_radio" checked="">
+                            <label for="radio02" class="card-body rounded-4 p-md-4 p-3 selector-item_label">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic2small.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                    </div>
+                                    <div class="col contentscard text-nowrap overflow-hidden">
+                                        <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Neha</h5>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card LikeCard matchCard border-0 rounded-5 form-check px-0 selecotr-item reportItem">
+                            <input type="radio" id="radio03" name="selector" class="form-check-input selector-item_radio">
+                            <label for="radio03" class="card-body rounded-4 p-md-4 p-3 selector-item_label">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="liveUserImg w-60px h-60px rounded-circle"><img src="assets/img/index/profilePic3small.jpg" class="rounded-circle h-100 w-100" alt=""></div>
+                                    </div>
+                                    <div class="col contentscard text-nowrap overflow-hidden">
+                                        <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Avi</h5>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a href="javascript:;" class="policyBtn text-decoration-none fs-lg-14 fs-12 text-black fw-600 w-100 px-3 py-1 rounded-pill">Dating Riport Policy...</a>
                     </div>
                 </form>
             </div>
             <div class="modal-footer border-0 justify-content-center">
-                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">CANCLE</button>
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplecancelandcontinue">CANCEL</button>
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplereport1">CONTINUE</button>
             </div>
             </div>
         </div>
     </div>
-    <!-- *ToolKit Modal End -->
+    <!-- *Report Modal End -->
+
+    <!-- *******Report1 Modal******* -->
+    <div class="modal fade" id="examplereport1" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplereport1Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplereport1Label">Report Enter The My World</div>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                <form class="row g-4">
+                    <div class="col-12 fs-14 text-muted fw-600 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum!</div>
+                    <div class="col-12 px-0">
+                        <div class="row mx-0 ">
+                            <div class="col-auto"><div class="h-20px"><img src="assets/img/icon/report.svg" alt="" class="h-100 "></div></div>
+                            <div class="col fs-14 fw-normal text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nulla minima rerum cupiditate ipsa nostrum iusto expedita quia aperiam dolor?</div>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="row mx-0 ">
+                            <div class="col-auto"><div class="h-20px"><img src="assets/img/icon/heart.svg" alt="" class="h-100 "></div></div>
+                            <div class="col fs-14 fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque, similique laudantium est pariatur vel.</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a href="javascript:;" class="policyBtn text-decoration-none fs-lg-14 fs-12 text-black fw-600 w-100 px-3 py-1 rounded-pill">Dating Riport Policy...</a>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12"  data-bs-toggle="modal" data-bs-target="#examplereport">BACK</button>
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplereport2">CONTINUE</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Report1 Modal End -->
+
+    <!-- *******Report2 Modal******* -->
+    <div class="modal fade" id="examplereport2" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplereport2Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplereport2Label">What is your reason for reporting?</div>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                <form class="row g-3">
+                    <div class="col-12 fs-14 text-muted fw-600 text-center">Please Select A Reason</div>
+                    <div class="col-12 form-check px-1 selecotr-item reportItem reportreason">
+                        <input type="radio" id="radio001" name="selector" class="form-check-input selector-item_radio " checked="">
+                        <label for="radio001" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">I’m not interested in this person</label>
+                    </div>
+                    <div class="col-12 form-check px-1 selecotr-item reportItem reportreason">
+                        <input type="radio" id="radio002" name="selector" class="form-check-input selector-item_radio ">
+                        <label for="radio002" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">This is a fake profile</label>
+                    </div>
+                    <div class="col-12 form-check px-1 selecotr-item reportItem reportreason">
+                        <input type="radio" id="radio003" name="selector" class="form-check-input selector-item_radio ">
+                        <label for="radio003" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Someone under 18 is involved</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12"  data-bs-toggle="modal" data-bs-target="#examplereport1">BACK</button>
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplereport3">CONTINUE</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Report2 Modal End -->
+
+    <!-- *******Report3 Modal******* -->
+    <div class="modal fade" id="examplereport3" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplereport3Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplereport3Label">Would you mind telling us where this happened?</div>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                <form class="row g-3">
+                    <div class="col-12 fs-14 text-muted fw-600 text-center">Please Select One</div>
+                    <div class="col-12 form-check px-1 selecotr-item reportItem reportreason">
+                        <input type="radio" id="riport1" name="selectors" class="form-check-input selector-item_radio " checked="">
+                        <label for="riport1" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">It’s in a message they sent me on Dating App</label>
+                    </div>
+                    <div class="col-12 form-check px-1 selecotr-item reportItem reportreason">
+                        <input type="radio" id="riport2" name="selectors" class="form-check-input selector-item_radio ">
+                        <label for="riport2" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">It’s in something they sent me off Dating App</label>
+                    </div>
+                    <div class="col-12 form-check px-1 selecotr-item reportItem reportreason">
+                        <input type="radio" id="riport3" name="selectors" class="form-check-input selector-item_radio ">
+                        <label for="riport3" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">There’s something in their profile photos or videos</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12"  data-bs-toggle="modal" data-bs-target="#examplereport2">BACK</button>
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplereport4">CONTINUE</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Report3 Modal End -->
+
+    <!-- *******Report4 Modal******* -->
+    <div class="modal fade" id="examplereport4" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplereport4Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplereport4Label">Would you mind sharing more details with us?</div>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                <form class="row g-3">
+                    <div class="col-12 fs-14 text-muted fw-600 text-center">Add A Comment</div>
+                    <div class="col-12 fs-md-14 fs-12">Minimum characters: 5</div>
+                    <div class="col-12 px-1">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Please provide additional details..." class="w-100 rounded-3 reportcomment fs-md-14 fs-12 text-muted m-0 p-2"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12"  data-bs-toggle="modal" data-bs-target="#examplereport3">BACK</button>
+                <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplereport5">CONTINUE</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Report4 Modal End -->
+
+    <!-- *******Report5 Modal******* -->
+    <div class="modal fade" id="examplereport5" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplereport5Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplereport5Label">Thank you for letting us know</div>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+                <form action="">
+                    <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                        <div class="row gap-3">
+                            <div class="col-12 text-center"><div class="h-md-50px h-40px"><img src="assets/img/header/logo.svg" class="h-100 w-100" alt=""></div></div>
+                            <div class="col-12 fs-md-16 fs-14 text-muted fw-500 text-center">Your report helps us maintain a safe space for all our members. A member of our team will be reviewing the info you provided.</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 justify-content-center">
+                        <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplecancelandcontinue">CANCEL</button>
+                        <button type="submit" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- *Report5 Modal End -->
+
+    <!-- *******cancelandcontinue Modal******* -->
+    <div class="modal fade" id="examplecancelandcontinue" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplecancelandcontinueLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <!-- <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplecancelandcontinueLabel">Thank you for letting us know</div> -->
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+                <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                    <form class="row g-4">
+                        <div class="col-12 text-center"><div class="h-md-50px h-40px"><img src="assets/img/header/logo.svg" class="h-100 w-100" alt=""></div></div>
+                        <div class="col-12 fs-md-16 fs-14 text-muted fw-500 text-center">Are you sure you want to cancel your report? This cannot be undone and your info will not be saved.</div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">YES/cancel</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplereport">CONTINUE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *cancelandcontinue Modal End -->
+
+    <!-- *******Mobile Number Verify Modal -->
+    <div class="modal fade" id="examplerestore" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplerestoreLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 justify-content-center">
+                <div class="fs-md-25 fs-20 text-black text-center fw-600" id="examplerestoreLabel">Restore Your Purchase?</div>
+            </div>
+            <div class="modal-body contentForm px-sm-4 px-3 pb-4">
+                <form class="row g-3 needs-validation" novalidate="">
+                    
+                    <div class="col-12 fs-md-14 fs-12 text-muted fw-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, aut. Veniam repellendus dolor rem possimus!</div>
+                    <div class="col-12 px-0">
+                        <input type="tel" class="form-control  text-black border-0 shadow-none rounded-0 fs-14"  placeholder="Your Number" id="floatingInputtel" required>
+                        <div class="invalid-feedback fs-12">Your Number</div>
+                    </div>
+                    <div class="col-12 fs-md-14 fs-12 text-muted fw-normal"><a href="javascript:;" class="text-decoration-none fw-500 text-theme2">Click Here</a> for help and Support</div>
+                    <div class="col-12 px-0 mx-0 row g-3 justify-content-center align-items-center text-center mt-4 ">
+                        <div class="col-auto"><button class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" type="button" data-bs-dismiss="modal" aria-label="Close">cancel</button></div>
+                        <div class="col-auto"><button class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" type="button">SUBMIT</button></div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *******promocode Modal******* -->
+    <div class="modal fade" id="examplepromocode" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplepromocodeLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplepromocodeLabel">Enter your promo code</div>
+                <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+                <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                    <form class="row g-4">
+                        <!-- <div class="col-12 text-center"><div class="h-md-50px h-40px"><img src="assets/img/header/logo.svg" class="h-100 w-100" alt=""></div></div> -->
+                        <div class="col-12 fs-md-16 fs-14 text-muted fw-500 text-center"> Unlock In-App Rewards</div>
+                        <div class="col-12"><input type="text" class="form-control text-black border-0 text-center shadow-none rounded-0 fs-md-14 fs-12" placeholder="Your Promo Code" id="floatingInput" required=""></div>
+                        <div class="col-12 fs-md-14 fs-12 text-muted fw-normal">Lorem ipsum dolor sit amet consectetur, <a href="javascript:;" class="text-decoration-none fw-500 text-theme2">Privacy Policy</a> adipisicing elit. Tempora voluptatibus facilis ut, <a href="javascript:;" class="text-decoration-none fw-500 text-theme2">Terms</a> itaque fugiat minima?</div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">CANCEL</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" >SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *promocode Modal End -->
+
+
+
     <!-- *?Offcanvas Of Verified Dating -->
     <div class="offcanvas datingPrivecyOffcanvas border-0 offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <!-- *000 -->
+        <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
+            <button type="button" class="btn-close ms-auto border-0 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
         <div class="offcanvas-body">
-            <div class="row">
-                <div class="col-12">Pending</div>
-            </div>
+            <form action="" class="row g-4 form">
+                <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Dating App Packages...</span></div>
+                <div class="col-12">
+                    <div class="card LikeCard matchCard border-0 rounded-5">
+                        <div class="card-body rounded-4 p-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="liveUserImg h-md-40px h-30"><img src="assets/img/header/logo.svg" class=" h-100" alt=""></div>
+                                </div>
+                                <div class="col contentscard text-nowrap overflow-hidden">
+                                    <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Basic Plan</h5>
+                                    <div class="w-95 text-truncate"><a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link ">Priority Likes, See who Likes you</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card LikeCard matchCard border-0 platinumcard rounded-5">
+                        <div class="card-body rounded-4 p-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="liveUserImg h-md-40px h-30"><img src="assets/img/header/logo.svg" class=" h-100" alt=""></div>
+                                </div>
+                                <div class="col contentscard text-nowrap overflow-hidden">
+                                    <h5 class="card-title text-theme2 fs-14 fw-600 m-0 overflow-hidden w-90">Pletinum Plan</h5>
+                                    <div class="w-95 text-truncate"><a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link ">Priority Likes, See who Likes you & More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card LikeCard matchCard border-0 goldcard rounded-5">
+                        <div class="card-body rounded-4 p-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="liveUserImg h-md-40px h-30"><img src="assets/img/header/logo.svg" class=" h-100" alt=""></div>
+                                </div>
+                                <div class="col contentscard text-nowrap overflow-hidden">
+                                    <h5 class="card-title text-theme1 fs-14 fw-600 m-0 overflow-hidden w-90">GOLD Plan</h5>
+                                    <div class="w-95 text-truncate"><a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link ">See Who Likes You & More!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Account Settings</span></div>
+                <div class="col-12 px-0 bg-light py-4">
+                    <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                        <div class="col fs-md-14 fs-12">Manage Payment Account</div>
+                        <div class="col-auto"><div class="w-13px rightarrowimg"><img src="assets/img/icon/rightarrow.svg" class="w-100" alt=""></div></div>
+                    </div>
+                    <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                        <div class="col-6 fs-md-14 fs-12">Email</div>
+                        <div class="col-6 d-flex align-items-center justify-content-end"><span class="fs-md-14 fs-12 text-truncate">pooja1234@gmail.com</span><div class="w-13px rightarrowimg ms-1"><img src="assets/img/icon/rightarrow.svg" class="w-100" alt=""></div></div>
+                    </div>
+                    <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                        <div class="col-6 fs-md-14 fs-12">Phone Number</div>
+                        <div class="col-6 d-flex align-items-center justify-content-end"><span class="fs-md-14 fs-12 text-truncate">919876543210</span><div class="w-13px rightarrowimg ms-1"><img src="assets/img/icon/rightarrow.svg" class="w-100" alt=""></div></div>
+                    </div>
+                    <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="modal" data-bs-target="#examplerestore">
+                        <div class="col fs-md-14 fs-12">Restore Purchases</div>
+                        <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-13px rightarrowimg"><img src="assets/img/icon/rightarrow.svg" class="w-100" alt=""></div></div>
+                    </div>
+                    <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="modal" data-bs-target="#examplepromocode">
+                        <div class="col fs-md-14 fs-12">Promo Code</div>
+                        <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-13px rightarrowimg"><img src="assets/img/icon/rightarrow.svg" class="w-100" alt=""></div></div>
+                    </div>
+                </div>
+                <div class="col-12 fs-md-14 fs-12">Verified Phone Number and Email help secure your account.</div>
+            </form>
         </div>
     </div>
     <!-- *?Offcanvas Of Verified Dating End -->
+    <!-- *Verified Datinf Inner-Offcanvas Start -->
+    <div class="offcanvas datingPrivecyOffcanvas border-0 offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrollinginner" aria-labelledby="offcanvasScrollinginnerLabel">
+        <div class="offcanvas-header shadow-none pb-0">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollinginnerLabel">Offcanvas with body scrolling</h5> -->
+            <button type="button" class="btn-close ms-auto border-0 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- *Manage Account Payment support -->
+            <form class="row g-3 form d-none">
+                <div class="col-12 fs-md-14 fs-12 fw-500">You have no cards saved. To add a card, make a purchase.</div>
+                <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Support Us</span></div>
+                <div class="col-12 px-0">
+                    <div class="row mx-0 align-items-center py-2 inpulable position-relative">
+                        <div class="col fs-md-14 fs-12">Help & Support</div>
+                        <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-13px rightarrowimg"><img src="assets/img/icon/rightarrow.svg" class="w-100" alt=""></div></div>
+                        <a href="javascript:;" class="stretched-link text-decoration-none"></a>
+                    </div>
+                </div>
+                <div class="col-12 fs-md-14 fs-12 fw-500">Get answers to any of your questions about your purchases or payments.</div>
+            </form>
+            <!-- *Manage Account Payment support End-->
+            <!-- *Email Add. verefied -->
+            <form class="row g-3 form d-none">
+                <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Email</span></div>
+                <div class="col-12 px-0">
+                    <div class="row mx-0 align-items-center py-2 position-relative text-primary">
+                        <div class="col fs-md-14 fs-12">pooja1234@gmail.com</div>
+                        <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-20px rightarrowimg"><img src="assets/img/icon/verified.svg" class="w-100" alt=""></div></div>
+                        <a href="javascript:;" class="stretched-link text-decoration-none"></a>
+                    </div>
+                </div>
+                <div class="col-12 fs-md-14 fs-12 fw-500">Verified Email Address</div>
+            </form>
+            <!-- *Email Add. verefied End-->
+            <!-- *Phone Number verefied -->
+            <form class="row g-3 form dnone">
+                <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Phone Number</span></div>
+                <div class="col-12 px-0">
+                    <div class="row mx-0 align-items-center py-2 position-relative text-primary">
+                        <div class="col fs-md-14 fs-12">919876543210</div>
+                        <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-20px rightarrowimg"><img src="assets/img/icon/verified.svg" class="w-100" alt=""></div></div>
+                        <a href="javascript:;" class="stretched-link text-decoration-none"></a>
+                    </div>
+                </div>
+                <div class="col-12 px-0">
+                    <div class="row mx-0 align-items-center py-2 inpulable">
+                        <div class="col fs-md-14 fs-12">Update My Phone Number</div>
+                        <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-13px rightarrowimg ms-1"><img src="assets/img/icon/rightarrow.svg" class="w-100" alt=""></div></div>
+                    </div>
+                </div>
+                <div class="col-12 fs-md-14 fs-12 fw-500">Verified Phone Number</div>
+            </form>
+            <!-- *Phone Number verefied End-->
+        </div>
+    </div>
+    <!-- *Verified Datinf Inner-Offcanvas End -->
+
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- *AOS Js* -->
-    <script src="assets/libs/aos/js/aos.min.js"></script>
-    <!-- *Swiper Slider Js* -->
-    <script src="assets/libs/swiperjs/swiper-bundle.min.js"></script>
     <!--*Custom Js* -->
     <script src="assets/js/main.js"></script>
 </body>

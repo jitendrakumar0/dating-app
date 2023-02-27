@@ -3,3 +3,17 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.offcanvasheadings {
+	& span{
+		position: relative;
+		&::before{
+			content: '';
+			width: 4px;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: $theme1;
+		}
+	}
+}

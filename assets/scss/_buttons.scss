@@ -63,3 +63,12 @@
         opacity: 1;
     }
 }
+
+.policyBtn {
+    transition: all 0.3s;
+    border: 1px solid $theme2;
+    &:hover {
+        border-color: $theme1 !important;
+        color: $theme2 !important;
+    }
+}
