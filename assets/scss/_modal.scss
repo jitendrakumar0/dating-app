@@ -12,7 +12,9 @@
       border-color: $theme1;
     }
   }
-
+  & label {
+    cursor: pointer;
+  }
   & .selecotr-item {
     & .selector-item_radio {
       appearance: none;

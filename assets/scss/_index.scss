@@ -11,6 +11,17 @@
   box-shadow: 0px 0px 20px rgba($theme1, 0.1);
   & .leftcontentsideperent{
     overflow: hidden auto;
+    & .matchcardside {
+      & .categorycardnav {
+        &.nav-pills {
+          & .nav-link {
+            &.active {
+
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -89,7 +100,7 @@
     &.active {
       & .liveUserImg{
         position: relative;
-        border: 1.6px solid #2df187;
+        border: 1.6px solid lighten($success, 20);
         transition: all 0.3s;
         &::after{
           content: '';
@@ -99,7 +110,7 @@
           border: 1.6px solid $white;
           top: 14%;
           right: -2px;
-          background-color: #2df187;
+          background-color: lighten($success, 20);
           border-radius: 50px;
           transition: all 0.3s;
         }
@@ -145,24 +156,21 @@
 
 // * maindashboard (Index Page)
 
+
 .maindashboard {
-  & .leftProfileSide {
-    width: 400px;
-  }
   & .rightContentSide {
-    width: calc(100% - 400px);
+    & .innersection {
+      & .matchuserimg {
+        width: 350px;
+        height: 600px;
+        & img {
+          object-fit: cover;
+          object-position: top center;
+        }
+      }
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -226,6 +234,29 @@
     }
     & .newprofile {
       background-color: $theme1 !important;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .maindashboard {
+    & .leftProfileSide {
+      width: 400px;
+    }
+    & .rightContentSide {
+      width: calc(100% - 400px);
+      & .innersection {
+        & .matchuserimg {
+          width: 350px;
+          height: 600px;
+          & img {
+            object-fit: cover;
+            object-position: top center;
+          }
+        }
+      }
     }
   }
 }

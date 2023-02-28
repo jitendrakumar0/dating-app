@@ -1,2 +1,28 @@
 @charset "UTF-8";
 
+// !Privacy setting page
+.privacySettingsPage {
+    & .innersection {
+        & .contentForm {
+            & .form {
+                & .inputlable {
+                    transition: all 0.3s;
+                    position: relative;
+                    border-bottom: 1.5px solid $theme1;
+                    & .rightarrowimg {
+                        filter: brightness(0);
+                        transition: all 0.3s;
+                    }
+                    &:hover {
+                        color: $theme2 !important;
+                        border-color: $theme1;
+                        cursor: pointer;
+                        & .rightarrowimg {
+                            filter: brightness(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
