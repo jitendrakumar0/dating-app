@@ -148,6 +148,25 @@
       outline-color: rgba($black, 0.1);
     }
   }
+  & .controlstab {
+    cursor: pointer;
+    &.active {
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        right: 4px;
+        transform: translate(0%, -50%);
+        top: 50%;
+        background-image: url(../img/icon/checked.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  } 
 }
 
 .input_range {
