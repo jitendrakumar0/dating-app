@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="row mx-0 align-items-center py-2 inputlable">
+                            <div class="row mx-0 align-items-center py-2 inputlable" data-bs-toggle="modal" data-bs-target="#exampleprivacysetting">
                                 <div class="col ps-0 fs-lg-16 fs-md-14 fs-12">Personalize Marketing Permissions</div>
                                 <div class="col-auto pe-0"><div class="h-lg-18px  h-13px rightarrowimg d-flex"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
                             </div>
@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="col-12 fs-lg-16 fs-md-14 fs-12 text-muted fw-500">These tools are necessary for the app to function and thus cannot be switched off. They are usually set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.
-                            <div class="text-end mt-1"><button type="button" class="mainBtn px-4 fs-md-14 fs-12">View Details</button></div>
+                            <div class="text-end mt-1"><button type="button" class="mainBtn px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#exampleprivacysetting">View Details</button></div>
                         </div>
                         <div class="col-12">
                             <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="row mx-0 align-items-center py-2 inputlable">
+                            <div class="row mx-0 align-items-center py-2 inputlable" data-bs-toggle="modal" data-bs-target="#exampleprivacysetting">
                                 <div class="col ps-0 fs-lg-16 fs-md-14 fs-12">Personalize Advertising Permissions</div>
                                 <div class="col-auto pe-0"><div class="h-lg-18px  h-13px rightarrowimg d-flex"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
                             </div>
@@ -112,12 +112,19 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="row mx-0 align-items-center py-2 inputlable">
+                            <div class="row mx-0 align-items-center py-2 inputlable" data-bs-toggle="modal" data-bs-target="#exampleprivacysetting">
                                 <div class="col ps-0 fs-lg-16 fs-md-14 fs-12">Personalize Analytics Permissions</div>
                                 <div class="col-auto pe-0"><div class="h-lg-18px  h-13px rightarrowimg d-flex"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
                             </div>
                         </div>
                         <div class="col-12 fs-lg-16 fs-md-14 fs-12 text-muted fw-500">These tools allow us to count visits and traffic sources and understand how users move around the app. This in turn helps us assess how the app performs and which features are the most and least popular so we can continue improving your experience.</div>
+                        <div class="col-12">
+                            <div class="row mx-0 justify-content-end">
+                                <div class="col-auto col m-0"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">Allow All</button></div>
+                                <div class="col-auto col m-0"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">Refuse All</button></div>
+                                <div class="col-auto col m-0"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">Save</button></div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -127,8 +134,7 @@
 
     <!-- *Modal -->
     <!-- *******privacysetting Modal******* -->
-    <!-- <button data-bs-toggle="modal" data-bs-target="#exampleprivacysetting">hello</button> -->
-    <div class="modal fade d-noen" id="exampleprivacysetting" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleprivacysettingLabel" tabindex="-1">
+    <div class="modal fade " id="exampleprivacysetting" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleprivacysettingLabel" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
             <div class="modal-header border-0 ">
@@ -137,19 +143,130 @@
             </div>
                 <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
                     <form class="row g-4">
-                        
+                        <div class="col-12 fs-md-14 fs-12 text-muted">You can toggle any Marketing Permissions on and off. We may add new partners from time to time. They will be added to this list. You can change your settings below at any time.</div>
+                        <div class="col-12 px-0 bg-light py-4">
+                            <div class="row mx-0 gap-3">
+                                <div class="col-12">
+                                    <div class="form-check form-switch custom-switch p-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <label class="form-check-label fs-md-14 fs-12 fw-500 text-black" for="Allow1">Allow AppsFlyer</label>
+                                            <div class=""><input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Allow1" checked>
+                                            <div class="ms-sm-3 h-25px d-inline-flex viewdetails" data-bs-toggle="modal" data-bs-target="#exampleviewdetails"><img src="assets/img/icon/view.svg" class="h-100" alt=""></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check form-switch custom-switch p-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <label class="form-check-label fs-md-14 fs-12 fw-500 text-black" for="Allow2">Allow GTAG (Youtube Tracking)</label>
+                                            <div class=""><input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Allow2">
+                                            <div class="ms-sm-3 h-25px d-inline-flex viewdetails" data-bs-toggle="modal" data-bs-target="#exampleviewdetails"><img src="assets/img/icon/view.svg" class="h-100" alt=""></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check form-switch custom-switch p-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <label class="form-check-label fs-md-14 fs-12 fw-500 text-black" for="Allow3">Allow Floodlight</label>
+                                            <div class=""><input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Allow3">
+                                            <div class="ms-sm-3 h-25px d-inline-flex viewdetails" data-bs-toggle="modal" data-bs-target="#exampleviewdetails"><img src="assets/img/icon/view.svg" class="h-100" alt=""></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                        <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="Anal">Allow new Marketing Permissions
+                                            <div class="fs-md-12 fs-10 text-muted">We may add new trackers. This setting determines whether these new trackers will be enabled or disabled by default.</div>
+                                        </label></div>
+                                        <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Anal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
-                <div class="modal-footer border-0 row g-3 justify-content-end">
-                    <div class="col-lg-auto col m-0 px-2"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Allow All</button></div>
-                    <div class="col-lg-auto col m-0 px-0"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Refuse All</button></div>
-                    <div class="col-lg-auto col m-0 px-2"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Save</button></div>
+                <div class="modal-footer border-0">
+                    <div class="row mx-0 g-2 w-100 justify-content-end">
+                        <div class="col-lg-auto col m-0 px-2"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Allow All</button></div>
+                        <div class="col-lg-auto col m-0 px-0"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Refuse All</button></div>
+                        <div class="col-lg-auto col m-0 px-2"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Save</button></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- *privacysetting Modal End -->
-
+    <!-- *******viewdetails Modal******* -->
+    <div class="modal fade" id="exampleviewdetails" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleviewdetailsLabel" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header border-0 ">
+                <button class="h-lg-25px h-md-20px h-18px border-0 shadow-none bg-transparent d-flex"  data-bs-toggle="modal" data-bs-target="#exampleprivacysetting"><img src="assets/img/icon/leftarrow.svg" class="h-100" alt=""></button>
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="exampleviewdetailsLabel">AppsFlyer</div>
+                <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                    <form class="row g-4">
+                        <div class="col-12">
+                            <div class="form-check form-switch custom-switch p-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="Allo">Allow AppsFlyer</label>
+                                    <div class=""><input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Allo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card LikeCard border-0 rounded-4">
+                                <div class="card-body rounded-4 p-4 h-100">
+                                    <div class="row mx-0 gap-2">
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Name <div class="fs-md-12 fs-10 text-muted fw-normal">AppsFlyer</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Description <div class="fs-md-12 fs-10 text-muted fw-normal">Enables Tinder to measure the performance of its own marketing campaigns and improve them over time.</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">URL <div class="fs-md-12 fs-10 fw-normal"><a href="javascript:;" class="text-decoration-none text-theme2">http://localhost/dating-app/privacy-settings.html</a></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card LikeCard border-0 rounded-4">
+                                <div class="card-body rounded-4 p-4 h-100">
+                                    <div class="row mx-0 gap-2">
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Name <div class="fs-md-12 fs-10 text-muted fw-normal">AF_SYNC</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Description <div class="fs-md-12 fs-10 text-muted fw-normal">Flag indicating that a final user identifier is set.  This is used to reduce load times.</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">URL <div class="fs-md-12 fs-10 fw-normal"><a href="javascript:;" class="text-decoration-none text-theme2">http://localhost/dating-app/privacy-settings.html</a></div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Type <div class="fs-md-12 fs-10 text-muted fw-normal">Third Party</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Host <div class="fs-md-12 fs-10 text-muted fw-normal">dating.com</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Duration <div class="fs-md-12 fs-10 text-muted fw-normal">1 Week</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card LikeCard border-0 rounded-4">
+                                <div class="card-body rounded-4 p-4 h-100">
+                                    <div class="row mx-0 gap-2">
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Name <div class="fs-md-12 fs-10 text-muted fw-normal">AF_SYNC</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Description <div class="fs-md-12 fs-10 text-muted fw-normal">Flag indicating that a final user identifier is set.  This is used to reduce load times.</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">URL <div class="fs-md-12 fs-10 fw-normal"><a href="javascript:;" class="text-decoration-none text-theme2">http://localhost/dating-app/privacy-settings.html</a></div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Type <div class="fs-md-12 fs-10 text-muted fw-normal">Third Party</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Host <div class="fs-md-12 fs-10 text-muted fw-normal">dating.com</div></div>
+                                        <div class="col-12 fs-md-14 fs-12 fw-600 text-black">Duration <div class="fs-md-12 fs-10 text-muted fw-normal">1 Week</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <div class="row mx-0 g-2 w-100 justify-content-end">
+                        <div class="col-lg-auto col m-0 px-2"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Allow All</button></div>
+                        <div class="col-lg-auto col m-0 px-0"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Refuse All</button></div>
+                        <div class="col-lg-auto col m-0 px-2"><button type="button" class="mainBtn px-lg-5 px-sm-4 px-2 fs-md-14 fs-12 w-lg-auto w-100">Save</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *viewdetails Modal End -->
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

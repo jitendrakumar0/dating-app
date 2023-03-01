@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 .heroSection {
-  background-image: linear-gradient(90deg, rgba($black, 0.5) 30%, rgba($black, 0.4) 100%), url(../../assets/img/index/heroBg3.jpg);
+  background-image: linear-gradient(90deg, rgba($black, 0.5) 30%, rgba($black, 0.4) 100%),
+    url(../../assets/img/index/heroBg3.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -9,14 +10,13 @@
 
 .leftProfileSide {
   box-shadow: 0px 0px 20px rgba($theme1, 0.1);
-  & .leftcontentsideperent{
+  & .leftcontentsideperent {
     overflow: hidden auto;
     & .matchcardside {
       & .categorycardnav {
         &.nav-pills {
           & .nav-link {
             &.active {
-
             }
           }
         }
@@ -25,8 +25,7 @@
   }
 }
 
-
-.navTabPerent{
+.navTabPerent {
   & .navTabs {
     flex-wrap: nowrap;
     overflow: auto hidden;
@@ -79,31 +78,31 @@
       }
       &.verifieduserImg {
         position: relative;
+        transition: all 0.3s;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          top: 14%;
+          right: -8px;
+          background-color: $white;
+          background-image: url(../img/icon/verified.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 50px;
           transition: all 0.3s;
-          &::after{
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            top: 14%;
-            right: -8px;
-            background-color: $white;
-            background-image: url(../img/icon/verified.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 50px;
-            transition: all 0.3s;
-          }
+        }
       }
     }
     &.active {
-      & .liveUserImg{
+      & .liveUserImg {
         position: relative;
         border: 1.6px solid lighten($success, 20);
         transition: all 0.3s;
-        &::after{
-          content: '';
+        &::after {
+          content: "";
           position: absolute;
           width: 10px;
           height: 10px;
@@ -130,7 +129,7 @@
 }
 
 .cardSection {
-  & .innersection{
+  & .innersection {
     & .LikeCard {
       & .card-body {
         position: relative;
@@ -138,7 +137,7 @@
           border-bottom: 0.6px solid rgba($theme1, 0.05);
         }
         &::before {
-          content: '';
+          content: "";
           width: 4px;
           height: 100%;
           position: absolute;
@@ -152,29 +151,65 @@
   }
 }
 
-
-
 // * maindashboard (Index Page)
-
 
 .maindashboard {
   & .rightContentSide {
     & .innersection {
       & .matchuserimg {
-        width: 350px;
+        box-shadow: 0px 0px 20px rgba($theme1, 0.1);
+        width: 400px;
         height: 600px;
+        overflow: hidden auto;
         & img {
           object-fit: cover;
           object-position: top center;
         }
+        & .userProfile {
+          & .unverifieduser {
+            cursor: pointer;
+            & img {
+              filter: grayscale(1);
+            }
+            &.active {
+              & img {
+                filter: grayscale(0);
+              }
+            }
+          }
+          & .editbutton {
+            cursor: pointer;
+          }
+        }
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+        background-color: transparent;
       }
     }
   }
 }
 
-
-
-
+@media screen and (min-width: 992px) {
+  .maindashboard {
+    & .leftProfileSide {
+      width: 400px;
+    }
+    & .rightContentSide {
+      width: calc(100% - 400px);
+      & .innersection {
+        & .matchuserimg {
+          width: 400px;
+          height: 600px;
+          & img {
+            object-fit: cover;
+            object-position: top center;
+          }
+        }
+      }
+    }
+  }
+}
 
 // *categoryCard
 .categoryCard {
@@ -187,7 +222,7 @@
       transition: all 0.3s;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
@@ -202,10 +237,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  & .newprofile , & .profileFollow, &.cardheading {
+  & .newprofile,
+  & .profileFollow,
+  &.cardheading {
     transition: all 0.3s;
   }
-  &:hover{
+  &:hover {
     & .cardheading {
       font-weight: 900 !important;
     }
@@ -216,7 +253,7 @@
   &.disable {
     position: relative;
     cursor: pointer;
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       inset: 0;
@@ -226,37 +263,14 @@
       opacity: 1;
       visibility: visible;
     }
-    &:hover{
-      &::after{
+    &:hover {
+      &::after {
         opacity: 0;
         visibility: hidden;
       }
     }
     & .newprofile {
       background-color: $theme1 !important;
-    }
-  }
-}
-
-
-
-@media screen and (min-width: 992px) {
-  .maindashboard {
-    & .leftProfileSide {
-      width: 400px;
-    }
-    & .rightContentSide {
-      width: calc(100% - 400px);
-      & .innersection {
-        & .matchuserimg {
-          width: 350px;
-          height: 600px;
-          & img {
-            object-fit: cover;
-            object-position: top center;
-          }
-        }
-      }
     }
   }
 }

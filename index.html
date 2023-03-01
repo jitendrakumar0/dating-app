@@ -290,9 +290,40 @@
                         <!-- *! Left Side Bar End-->
                         <!-- *! Right Side Start -->
                         <div class="rightContentSide p-3">
-                            <div class="row h-100 my-5 py-3 innersection align-items-center">
+                            <div class="row h-100 innersection align-items-center">
                                 <div class="col-12">
-                                    <div class="matchuserimg m-auto rounded-4"><img src="assets/img/index/profilePic2big.jpg" class="w-100 H-100 rounded-4" alt=""></div>
+                                    <div class="matchuserimg m-auto rounded-5 position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-80 rounded-5" alt="">
+                                    <div class="row mx-0 p-3 gap-3 userProfile ">
+                                        <div class="col-12 px-0 pb-3 border-bottom border-bottom-1 border-theme1">
+                                            <div class="row mx-0 align-items-center">
+                                                <div class="col-9"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-black">Pooja 008</div></div>
+                                                <div class="col-3 d-flex align-items-center justify-content-between">
+                                                    <div class="h-25px d-inline-flex unverifieduser active" data-bs-toggle="modal" data-bs-target="#exampleprofileverified"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div>
+                                                    <div class="h-25px d-inline-flex editbutton"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0 align-items-center border-bottom border-bottom-1 border-theme1 pb-3">
+                                                <div class="col-auto"><div class="h-25px"><img src="assets/img/icon/heart-like.svg" alt="" class="h-100"></div></div>
+                                                <div class="col"><div class="fs-lg-16 fs-md-14 fs-12 fw-600 text-theme2">Looking for</div><div class="fs-lg-14 fs-md-12 fs-10 fw-normal text-muted">Long-Term Partner</div></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0 border-bottom border-bottom-1 border-theme1 pb-3">
+                                            <div class="row g-2 mx-0">
+                                                <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Harry Potter</button></div>
+                                                <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Spa</button></div>
+                                                <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Hot Yoga</button></div>
+                                                <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Love</button></div>
+                                                <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Friendship</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 editprogress px-3 py-2 text-white text-center fw-500 fs-md-14 fs-12 bg-theme1">Profile (20% Complete)</div>
+                                    </div>
+                                    </div>
+                                    <div class="usermatchiconList">
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -744,6 +775,54 @@
         </div>
     </div>
     <!-- *location Modal End -->
+
+    <!-- ! Right Side Modals -->
+    <!-- *******profileverified Modal******* -->
+    <div class="modal fade" id="exampleprofileverified" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleprofileverifiedLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <!-- <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="exampleprofileverifiedLabel">Thank you for letting us know</div>
+                <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+                <div class="modal-body px-sm-4 px-3 pb-4 contentForm ">
+                    <form class="row g-4 dnone">
+                        <div class="col-12 fs-md-25 fs-20 w-100 text-black gap-2 fw-600 d-flex align-items-center justify-content-center">Get Verufied<div class="h-md-30px h-25px d-flex"><img src="assets/img/icon/verified.svg" class="h-100 " alt=""></div></div>
+                        <div class="col-12 fs-md-14 fs-12 text-muted fw-500 text-center">Help us protect the Dating community by showing that you’re the person in your profile. All you need to do is take a video selfie. If your video selfie matches the photos in your profile, boom, you’re verified!</div>
+                    </form>
+                    <form class="row g-4 d-none">
+                        <div class="col-12 fs-md-25 fs-20 w-100 text-black gap-2 fw-600 d-flex align-items-center justify-content-center">How It Works<div class="h-md-30px h-25px d-flex"><img src="assets/img/icon/verified.svg" class="h-100 " alt=""></div></div>
+                        <div class="col-12 fs-md-14 fs-12 text-muted fw-500 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nihil tempora voluptatibus impedit laboriosam magni ea nobis quia dicta autem!</div>
+                    </form>
+                    <form class="row g-4 d-none">
+                        <div class="col-12 fs-md-25 fs-20 w-100 text-black text-center fw-600">Before you continue...</div>
+                        <div class="col-12 offcanvasheadings fs-md-16 fs-14 text-black fw-600"><span class="ps-3">Prep your lighting</span></div>
+                        <div class="col-12">
+                            <ul class="m-0 fs-md-14 fs-12 text-muted fw-normal">
+                                <li class="mb-1">Choose a well-lit environment</li>
+                                <li class="mb-1">Turn up your brightness</li>
+                                <li class="mb-1">Avoid harsh glare and backlighting</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 offcanvasheadings fs-md-16 fs-14 text-black fw-600"><span class="ps-3">Show your face</span></div>
+                        <div class="col-12">
+                            <ul class="m-0 fs-md-14 fs-12 text-muted fw-normal">
+                                <li class="mb-1">Face the camera directly</li>
+                                <li class="mb-1">Remove hats, sunglasses, and face coverings</li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">LATER</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12 d-none">VERIFY ME</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *profileverified Modal End -->
+    
 
 
 
