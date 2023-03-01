@@ -177,11 +177,11 @@
                                     </div>
                                     <div class="col text-nowrap">
                                         <div class="fs-md-14 fs-12 text-muted mb-2">Sexual Orientation</div>
-                                        <div class=""><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">+ Add Sexual Orientation</button></div>
+                                        <div class=""><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleSexual">+ Add Sexual Orientation</button></div>
                                     </div>
                                     <div class="col text-nowrap">
                                         <div class="fs-md-14 fs-12 text-muted mb-2">Looking for</div>
-                                        <div class=""><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">+ Add Relationship Intent</button></div>
+                                        <div class=""><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill" data-bs-toggle="modal" data-bs-target="#examplerelationship">+ Add Relationship Intent</button></div>
                                     </div>
                                 </div>
                             </div>
@@ -207,29 +207,172 @@
     <div class="modal fade" id="exampletpassion" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampletpassionLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-            <div class="modal-header border-0 pb-0">
-                <div class="fs-md-25 fs-20 text-black text-center fw-600 px-0" id="exampletpassionLabel">Passions</div>
-                <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body px-sm-4 px-3 pb-4">
-                <div class="row g-3">
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">90s Kid</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Harry Potter</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">SoundCloud</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Spa</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Self Care</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Heavy Metal</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">House Parties</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Ludo</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Maggi</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Hot Yoga</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Love</button></div>
-                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Friendship</button></div>
+                <div class="modal-header border-0">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 px-0 w-100" id="exampletpassionLabel">Passions</div>
+                    <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
-            </div>
+                <div class="modal-body px-sm-4 px-3 pb-4">
+                    <div class="row g-3">
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">90s Kid</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Harry Potter</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">SoundCloud</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Spa</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Self Care</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Heavy Metal</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">House Parties</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Ludo</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Maggi</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Hot Yoga</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Love</button></div>
+                        <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Friendship</button></div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE <span>0/5</span></button>
+                </div>
             </div>
         </div>
     </div>
+    <!-- *Passions Modal End-->
+    <!-- *******Sexual Orientation Modal -->
+    <div class="modal fade" id="exampleSexual" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleSexualLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 px-0 w-100" id="exampleSexualLabel">My sexual orientation is</div>
+                    <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body px-sm-4 px-3 pb-4 contentForm">
+                    <form class="row g-2">
+                        <div class="col-12 fs-14 text-muted fw-600 text-center">Select up to 3</div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio001" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio001" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Straight</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio002" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio002" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Gay</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio003" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio003" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Lesbian</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio004" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio004" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Bisexual</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio005" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio005" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Asexual</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio006" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio006" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Demisexual</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio007" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio007" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Pansexual</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio008" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio008" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Queer</label>
+                        </div>
+                        <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
+                            <input type="checkbox" id="radio009" name="selector" class="form-check-input selector-item_radio ">
+                            <label for="radio009" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Bicurious</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE <span>0/3</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Sexual Orientation Modal End-->
+    <!-- *******Relationship Modal -->
+    <div class="modal fade" id="examplerelationship" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplerelationshipLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 px-0 w-100" id="examplerelationshipLabel">Right now I'm looking for...</div>
+                    <!-- <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body px-sm-4 px-3 pb-4">
+                    <div class="row g-3">
+                        <div class="col-12 fs-14 text-muted fw-600 text-center">Increase compatibility by sharing yours!</div>
+                        <div class="col-6">
+                            <div class="card LikeCard border-0 rounded-5 h-100">
+                                <div class="card-body rounded-4 p-4">
+                                    <div class="row g-3">
+                                        <div class="col-12 text-center"><div class="liveUserImg h-50px d-inline-flex"><img src="assets/img/icon/heart-like.svg" class=" h-100" alt=""></div></div>
+                                        <div class="col-12 text-center card-title text-black  fs-14 fw-600 m-0 overflow-hidden w-90">Long-term partner</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card LikeCard border-0 rounded-5 h-100">
+                                <div class="card-body rounded-4 p-4">
+                                    <div class="row g-3">
+                                        <div class="col-12 text-center"><div class="liveUserImg h-50px d-inline-flex"><img src="assets/img/icon/lafing-emoji.svg" class=" h-100" alt=""></div></div>
+                                        <div class="col-12 text-center card-title text-black  fs-14 fw-600 m-0 overflow-hidden w-90">Long-term, open to short</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card LikeCard border-0 rounded-5 h-100">
+                                <div class="card-body rounded-4 p-4">
+                                    <div class="row g-3">
+                                        <div class="col-12 text-center"><div class="liveUserImg h-50px d-inline-flex"><img src="assets/img/icon/wine.svg" class=" h-100" alt=""></div></div>
+                                        <div class="col-12 text-center card-title text-black  fs-14 fw-600 m-0 overflow-hidden w-90">Short-term, open to long</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card LikeCard border-0 rounded-5 h-100">
+                                <div class="card-body rounded-4 p-4">
+                                    <div class="row g-3">
+                                        <div class="col-12 text-center"><div class="liveUserImg h-50px d-inline-flex"><img src="assets/img/icon/lafing-emoji1.svg" class=" h-100" alt=""></div></div>
+                                        <div class="col-12 text-center card-title text-black  fs-14 fw-600 m-0 overflow-hidden w-90">Short-term fun</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card LikeCard border-0 rounded-5 h-100">
+                                <div class="card-body rounded-4 p-4">
+                                    <div class="row g-3">
+                                        <div class="col-12 text-center"><div class="liveUserImg h-50px d-inline-flex"><img src="assets/img/icon/kiss-love.svg" class=" h-100" alt=""></div></div>
+                                        <div class="col-12 text-center card-title text-black  fs-14 fw-600 m-0 overflow-hidden w-90">New friends</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card LikeCard border-0 rounded-5 h-100">
+                                <div class="card-body rounded-4 p-4">
+                                    <div class="row g-3">
+                                        <div class="col-12 text-center"><div class="liveUserImg h-50px d-inline-flex"><img src="assets/img/icon/heart-like.svg" class=" h-100" alt=""></div></div>
+                                        <div class="col-12 text-center card-title text-black  fs-14 fw-600 m-0 overflow-hidden w-90">Still figuring it out</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Relationship Modal End-->
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
