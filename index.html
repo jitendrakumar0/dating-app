@@ -292,7 +292,7 @@
                         <div class="rightContentSide p-3 py-5 my-lg-0 my-5">
                             <div class="row h-100 innersection align-items-center">
                                 <!-- *Account Profile -->
-                                <div class="col-12 d-none">
+                                <div class="col-12 dnone">
                                     <div class="matchuserimg m-auto rounded-5 position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-80 rounded-5" alt="">
                                     <div class="row mx-0 p-3 gap-3 userProfile ">
                                         <div class="col-12 px-0 pb-3 border-bottom border-bottom-1 border-theme1">
@@ -300,7 +300,7 @@
                                                 <div class="col-9"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-black">Pooja 008</div></div>
                                                 <div class="col-3 d-flex align-items-center justify-content-between">
                                                     <div class="h-25px d-inline-flex unverifieduser active" data-bs-toggle="modal" data-bs-target="#exampleprofileverified"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div>
-                                                    <div class="h-25px d-inline-flex editbutton"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></div>
+                                                    <a href="edit-info.html" class="h-25px d-inline-flex editbutton"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -326,13 +326,107 @@
                                 <!-- *Account Profile End-->
 
                                 <!-- *Find User -->
-                                <div class="col-12 Finduseraccount dnone">
-                                    <div class="row mx-0 subFind">
-                                        <div class="col-auto m-auto"><div class="h-100px w-100px rounded-circle findingaccountImg video-play-button position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                <div class="col-12 Finduseraccount d-none">
+                                    <div class="position-relative">
+                                        <div class="matchuserimg shadow-none d-flex align-items-center justify-content-center m-auto rounded-5"><div class="h-100px w-100px rounded-circle findingaccountImg video-play-button position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                        <div class="bufringIconPerent disableicone position-absolute ">
+                                            <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-center gap-2 bufringLists disable">
+                                                <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/refresh.svg" class="w-100 h-100" alt=""></a></li>
+                                                <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/close.svg" class="w-100 h-100" alt=""></a></li>
+                                                <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/star.svg" class="w-100 h-100" alt=""></a></li>
+                                                <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/heart.svg" class="w-100 h-100" alt=""></a></li>
+                                                <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/charg.svg" class="w-100 h-100" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        
                                     </div>
+                                    <!-- *Arrow Keys -->
+                                    <div class="row mx-0 mt-4 g-xl-3 g-2 bottomKeyInput align-items-center justify-content-center">
+                                        <div class="col-auto">
+                                            <div class="switches-button position-relative d-flex align-items-center p-0 bg-theme2 rounded-pill w-120px h-25px">
+                                                <input type="radio" class="position-absolute top-0" id="switchsho" name="switchPla" value="showw" checked="checked" />
+                                                <input type="radio" class="position-absolute top-0" id="switchhi" name="switchPla" value="hide" />
+                                                <label class="w-50 m-0 p-0 text-center fs-lg-12 fs-10 fw-normal" for="switchsho">Show</label>
+                                                <label class="w-50 m-0 p-0 text-center fs-lg-12 fs-10 fw-normal" for="switchhi">Hide</label>
+                                                <div class="switch-wrapper position-absolute top-0 bottom-0 w-50">
+                                                    <div class="switch rounded-pill bg-white h-100">
+                                                        <div class="innerswitch w-100 d-inline-flex justify-content-center align-items-center text-theme2 fs-lg-12 fs-10 fw-normal position-absolute top-0 start-0 h-100">Show</div>
+                                                        <div class="innerswitch w-100 d-inline-flex justify-content-center align-items-center text-theme2 fs-lg-12 fs-10 fw-normal position-absolute top-0 start-0 h-100">Hide</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/nope.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Nope</span></div>
+                                        <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/open-profile.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Open Profile</span></div>
+                                        <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/like-profile.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Like</span></div>
+                                        <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/close-profile.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Close Profile</span></div>
+                                        <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/super-like.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Close Profile</span></div>
+                                        <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/next-image.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Close Profile</span></div>
+                                    </div>
+                                    <!-- *Arrow Keys End-->
                                 </div>
-                                <!-- *Find User End -->
+                                <!-- *Find User End-->
+
+                                <!-- *Finding User Profie -->
+                                <div class="col-12 Finduseraccount d-none">
+                                    <div class="position-relative">
+                                        <div class="matchuserimg liveuserProfile m-auto rounded-5 position-relative"><img src="assets/img/index/profilePic3big.jpg" class="w-100 h-100 rounded-5" alt="">
+                                            <div class="bufringIconPerent position-absolute ">
+                                                <button class="plusBtn shadow-none border-0 d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-3 bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><img src="assets/img/icon/close.svg" class="w-100 h-100" alt=""></button>
+                                                <div class="collapse position-absolute end-0 bottom-60px" id="collapseExample">
+                                                    <div class="card p-0 bg-transparent border-0 card-body">
+                                                        <ul class="list-unstyled m-0 p-0 d-flex flex-column align-items-center justify-content-between gap-2 bufringLists">
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/refresh.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/close.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/star.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/heart.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/charg.svg" class="w-100 h-100" alt=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- User Name & Location-->
+                                            <div class="position-absolute bottom-20px start-20px">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col-12 px-0 d-flex align-items-center gap-2"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-white">Rohit 007</div> <div class="h-25px d-inline-flex unverifieduser"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div></div>
+                                                    <div class="col-12 px-0 fs-10 fw-normal text-white d-flex align-items-center gap-2"><span class="d-flex h-15px"><img src="assets/img/icon/location-white.svg" class="h-100" alt=""></span>5 KM Away</div>
+                                                </div>
+                                            </div>
+                                            <!-- User Name & Location End -->
+                                            <!-- Details Icon -->
+                                            <div class="position-absolute top-20px start-20px">
+                                                <button type="button" class="border-0 p-0 shadow-none bg-transparent h-25px d-inline-flex unverifieduser"><img src="assets/img/icon/info.svg" class="h-100" alt=""></button>
+                                            </div>
+                                            <!-- Details Icon End-->
+                                        </div>
+                                    </div>
+                                <!-- *Arrow Keys -->
+                                <div class="row mx-0 mt-4 g-xl-3 g-2 bottomKeyInput align-items-center justify-content-center">
+                                    <div class="col-auto">
+                                        <div class="switches-button position-relative d-flex align-items-center p-0 bg-theme2 rounded-pill w-120px h-25px">
+                                            <input type="radio" class="position-absolute top-0" id="switchshoww1" name="switchPlan" value="showw" checked="checked" />
+                                            <input type="radio" class="position-absolute top-0" id="switchhide2" name="switchPlan" value="hide" />
+                                            <label class="w-50 m-0 p-0 text-center fs-lg-12 fs-10 fw-normal" for="switchshoww1">Show</label>
+                                            <label class="w-50 m-0 p-0 text-center fs-lg-12 fs-10 fw-normal" for="switchhide2">Hide</label>
+                                            <div class="switch-wrapper position-absolute top-0 bottom-0 w-50">
+                                                <div class="switch rounded-pill bg-white h-100">
+                                                    <div class="innerswitch w-100 d-inline-flex justify-content-center align-items-center text-theme2 fs-lg-12 fs-10 fw-normal position-absolute top-0 start-0 h-100">Show</div>
+                                                    <div class="innerswitch w-100 d-inline-flex justify-content-center align-items-center text-theme2 fs-lg-12 fs-10 fw-normal position-absolute top-0 start-0 h-100">Hide</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/nope.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Nope</span></div>
+                                    <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/open-profile.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Open Profile</span></div>
+                                    <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/like-profile.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Like</span></div>
+                                    <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/close-profile.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Close Profile</span></div>
+                                    <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/super-like.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Close Profile</span></div>
+                                    <div class="col-auto d-flex align-items-center gap-1"><div class="h-15px d-flex iconeimages"><img src="assets/img/icon/next-image.svg" class="h-100" alt=""></div> <span class="fs-md-12 fs-10 text-muted fw-500">Close Profile</span></div>
+                                </div>
+                                <!-- *Arrow Keys End-->
+                                <!-- *Finding User Profie End-->
                             </div>
+                        </div>
                         </div>
                         <!-- *! Right Side End -->
                 </div>

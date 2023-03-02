@@ -189,7 +189,16 @@
 
     // *Find User
     & .Finduseraccount {
-      & .subFind {
+      & .matchuserimg {
+        &.liveuserProfile{
+          &::before{
+            content: '';
+            margin: auto;
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba($black, 0.8) 10%, rgba($black, 0) 30%);
+          }
+        }
         & .findingaccountImg {
           border: 2.5px solid $theme1;
           &  img {
@@ -226,6 +235,48 @@
         }
       }
     }
+    & .bufringIconPerent {
+      &.disableicone{
+        left: 50%;
+        transform: translate(-50%,-20px);
+      }
+      bottom: 20px;
+      right: 20px;
+      & .plusBtn {
+        transition: all 0.3s;
+        &.collapsed {
+          transform: rotate(45deg);
+        }
+      }
+    & .bufringLists {
+      & .bufringIcon {
+        & .bufringIconList {
+          transition: all 0.3s;
+          & img {
+            transition: all 0.3s;
+          }
+          &:hover{
+            & img {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      &.disable {
+        & .bufringIcon {
+          & .bufringIconList {
+            border: 1.6px solid rgba($theme2, 0.1);
+            & img {
+              filter: blur(2px);
+            }
+            &:hover{
+              border-color: rgba($theme1, 0.4) !important;
+            }
+          }
+        }
+      }
+    }
+  }
     }
   }
 }
