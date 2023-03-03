@@ -34,7 +34,7 @@
     color: rgba($black, 0.8);
     &:hover {
         color: $theme2;
-        border-color: $theme1;
+        border-color: $theme1 !important;
     }
 }
 

@@ -55,128 +55,69 @@
 
 <body >
     <!-- *Edit Profile Page -->
-    <div class="container-fluid my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mb-5 fs-md-45 fs-sm-30 fs-20 text-black text-center fw-600 pb-0">Edit Profile</div>
-                <div class="col-12">
-                    <div class="contentForm">
-                        <form class="row mx-0 g-4 justify-content-between needs-validation" novalidate="">
-
-                            <div class="col-lg-6 order-lg-2 order-1 d-none">
-                                <div class="row mx-0 g-3">
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control px-0 text-black border-0 shadow-none rounded-0 fs-md-14 fs-12"  placeholder="Your First Name" id="floatingInput" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control px-0 text-black border-0 shadow-none rounded-0 fs-md-14 fs-12"  placeholder="Your Last Name" id="floatingInput1" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="email" class="form-control px-0 text-black border-0 shadow-none rounded-0 fs-md-14 fs-12" placeholder="Your Email" id="floatingInput2" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="date" class="form-control px-0 text-uppercase text-black border-0 shadow-none px-1 rounded-0 fs-md-14 fs-12 dateinputfild" onfocus="(this.type='date')" placeholder="Birthday" id="floatingInput4" required>
-                                    </div>
-                                    <div class="col-12 px-0">
-                                        <div class="row mx-0 align-items-center  g-2">
-                                            <div class="col-12 fs-md-14 fs-12 text-muted">I am a:</div>
-                                            <div class="col form-check  custom-check px-1 selecotr-item">
-                                                <input type="radio" id="radio1" name="selector" class="form-check-input selector-item_radio" checked>
-                                                <label for="radio1" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Male</label>
-                                            </div>
-                                            <div class="col form-check  custom-check px-1 selecotr-item">
-                                                <input type="radio" id="radio2" name="selector" class="form-check-input selector-item_radio">
-                                                <label for="radio2" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Female</label>
-                                            </div>
-                                            <div class="col form-check  custom-check px-1 selecotr-item">
-                                                <input type="radio" id="radio3" name="selector" class="form-check-input selector-item_radio">
-                                                <label for="radio3" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Other</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-check custom-check ">
-                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label fs-md-14 fs-12 text-muted" for="flexCheckDefault">Show my gender on my profile</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 px-0">
-                                        <div class="row mx-0 align-items-center   g-2">
-                                            <div class="col-12 fs-md-14 fs-12 text-muted">Looking for a:</div>
-                                            <div class="col form-check  custom-check px-1 selecotr-item">
-                                                <input type="radio" id="radio01" name="selector1" class="form-check-input selector-item_radio">
-                                                <label for="radio01" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Male</label>
-                                            </div>
-                                            <div class="col form-check  custom-check px-1 selecotr-item">
-                                                <input type="radio" id="radio02" name="selector1" class="form-check-input selector-item_radio" checked>
-                                                <label for="radio02" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Female</label>
-                                            </div>
-                                            <div class="col form-check  custom-check px-1 selecotr-item">
-                                                <input type="radio" id="radio03" name="selector1" class="form-check-input selector-item_radio" >
-                                                <label for="radio03" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Everyone</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
+    <div class="container-fluid my-5 editinfoPage">
+        <div class="pxlg-5 px3 container-xl innersection">
+            <div class="row ">
+                <div class="col-12 mb-lg-5 mb-4 fs-md-45 fs-sm-30 fs-20 text-black text-center fw-600 pb-0">Edit Profile</div>
+                    <div class="col-12 contentForm px-0">
+                        <form class="row form mx-0 g-lg-4 gap-lg-0 gap-4 justify-content-between needs-validation" novalidate="">
                             <!-- Edit info -->
-                            <div class="col-xl-4 col-lg-5  row mx-0 g-3 chooseImageSide">
-                                <div class="col-sm-4 col d-lg-block d-flex justify-content-center">
-                                    <div class="upload position-relative d-inline-block">
-                                        <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile" required>
-                                        <label for="formFile" class="form-label m-0 w-100px h-150px text-muted d-flex align-items-center justify-content-center">
-                                            <span class="addImage d-flex align-items-center justify-content-center w-25px h-25px rounded-circle bg-theme1 fs-16 text-white position-absolute">+</span>
-                                        </label>
+                            <div class="col-xl-5 col-lg-6">
+                                <div class="row mx-0 g-lg-4 g-3 chooseImageSide">
+                                    <div class="col-lg-auto col-md col-sm-4 col-4 d-lgblock d-flex justify-content-center">
+                                        <div class="upload position-relative d-inline-block">
+                                            <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile" required>
+                                            <label for="formFile" class="form-label m-0 w-lg-150px  w-sm-100px w-80px h-lg-150px h-sm-100px h-80px text-muted d-flex align-items-center justify-content-center">
+                                                <span class="addImage d-flex align-items-center justify-content-center w-lg-25px w-20px h-lg-25px h-20px rounded-circle bg-theme1 fs-lg-16 fs-14 text-white position-absolute">+</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4 col d-lg-block d-flex justify-content-center">
-                                    <div class="upload position-relative d-inline-block">
-                                        <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile1" required>
-                                        <label for="formFile1" class="form-label m-0 w-100px h-150px text-muted d-flex align-items-center justify-content-center">
-                                            <span class="addImage d-flex align-items-center justify-content-center w-25px h-25px rounded-circle bg-theme1 fs-16 text-white position-absolute">+</span>
-                                        </label>
+                                    <div class="col-lg-auto col-md col-sm-4 col-4 d-lgblock d-flex justify-content-center">
+                                        <div class="upload position-relative d-inline-block">
+                                            <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile1" required>
+                                            <label for="formFile1" class="form-label m-0 w-lg-150px w-sm-100px w-80px h-lg-150px h-sm-100px h-80px text-muted d-flex align-items-center justify-content-center">
+                                                <span class="addImage d-flex align-items-center justify-content-center w-lg-25px w-20px h-lg-25px h-20px rounded-circle bg-theme1 fs-lg-16 fs-14 text-white position-absolute">+</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4 col d-lg-block d-flex justify-content-center">
-                                    <div class="upload position-relative d-inline-block">
-                                        <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile2" required>
-                                        <label for="formFile2" class="form-label m-0 w-100px h-150px text-muted d-flex align-items-center justify-content-center">
-                                            <span class="addImage d-flex align-items-center justify-content-center w-25px h-25px rounded-circle bg-theme1 fs-16 text-white position-absolute">+</span>
-                                        </label>
+                                    <div class="col-lg-auto col-md col-sm-4 col-4 d-lgblock d-flex justify-content-center">
+                                        <div class="upload position-relative d-inline-block">
+                                            <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile2" required>
+                                            <label for="formFile2" class="form-label m-0 w-lg-150px w-sm-100px w-80px h-lg-150px h-sm-100px h-80px text-muted d-flex align-items-center justify-content-center">
+                                                <span class="addImage d-flex align-items-center justify-content-center w-lg-25px w-20px h-lg-25px h-20px rounded-circle bg-theme1 fs-lg-16 fs-14 text-white position-absolute">+</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4 col d-lg-block d-flex justify-content-center">
-                                    <div class="upload position-relative d-inline-block">
-                                        <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile3" required>
-                                        <label for="formFile3" class="form-label m-0 w-100px h-150px text-muted d-flex align-items-center justify-content-center">
-                                            <span class="addImage d-flex align-items-center justify-content-center w-25px h-25px rounded-circle bg-theme1 fs-16 text-white position-absolute">+</span>
-                                        </label>
+                                    <div class="col-lg-auto col-md col-sm-4 col-4 d-lgblock d-flex justify-content-center">
+                                        <div class="upload position-relative d-inline-block">
+                                            <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile3" required>
+                                            <label for="formFile3" class="form-label m-0 w-lg-150px w-sm-100px w-80px h-lg-150px h-sm-100px h-80px text-muted d-flex align-items-center justify-content-center">
+                                                <span class="addImage d-flex align-items-center justify-content-center w-lg-25px w-20px h-lg-25px h-20px rounded-circle bg-theme1 fs-lg-16 fs-14 text-white position-absolute">+</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4 col d-lg-block d-flex justify-content-center">
-                                    <div class="upload position-relative d-inline-block">
-                                        <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile4" required>
-                                        <label for="formFile4" class="form-label m-0 w-100px h-150px text-muted d-flex align-items-center justify-content-center">
-                                            <span class="addImage d-flex align-items-center justify-content-center w-25px h-25px rounded-circle bg-theme1 fs-16 text-white position-absolute">+</span>
-                                        </label>
+                                    <div class="col-lg-auto col-md col-sm-4 col-4 d-lgblock d-flex justify-content-center">
+                                        <div class="upload position-relative d-inline-block">
+                                            <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile4" required>
+                                            <label for="formFile4" class="form-label m-0 w-lg-150px w-sm-100px w-80px h-lg-150px h-sm-100px h-80px text-muted d-flex align-items-center justify-content-center">
+                                                <span class="addImage d-flex align-items-center justify-content-center w-lg-25px w-20px h-lg-25px h-20px rounded-circle bg-theme1 fs-lg-16 fs-14 text-white position-absolute">+</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4 col d-lg-block d-flex justify-content-center">
-                                    <div class="upload position-relative d-inline-block">
-                                        <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile5" required>
-                                        <label for="formFile5" class="form-label m-0 w-100px h-150px text-muted d-flex align-items-center justify-content-center">
-                                            <span class="addImage d-flex align-items-center justify-content-center w-25px h-25px rounded-circle bg-theme1 fs-16 text-white position-absolute">+</span>
-                                        </label>
+                                    <div class="col-lg-auto col-md col-sm-4 col-4 d-lgblock d-flex justify-content-center">
+                                        <div class="upload position-relative d-inline-block">
+                                            <input class="form-control input-file p-0 position-absolute w-100 h-100" type="file" id="formFile5" required>
+                                            <label for="formFile5" class="form-label m-0 w-lg-150px w-sm-100px w-80px h-lg-150px h-sm-100px h-80px text-muted d-flex align-items-center justify-content-center">
+                                                <span class="addImage d-flex align-items-center justify-content-center w-lg-25px w-20px h-lg-25px h-20px rounded-circle bg-theme1 fs-lg-16 fs-14 text-white position-absolute">+</span>
+                                            </label>
+                                        </div>
                                     </div>
+                                    <div class="col-12 fs-md-14 fs-12 text-muted text-center">Add a video, pic, or Loop to get 4% closer to completing your profile and you may even get more Likes.</div>
+                                    <div class="col-12 text-center"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">Add Media</button></div>
                                 </div>
-                                <div class="col-12 fs-md-14 fs-12 text-muted text-center">Add a video, pic, or Loop to get 4% closer to completing your profile and you may even get more Likes.</div>
-                                <div class="col-12 text-center"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">Add Media</button></div>
                             </div>
 
-                            <div class="col-xl-8 col-lg-7">
+                            <div class="col-xl-7 col-lg-6">
                                 <div class="row mx-0 g-4">
                                     <div class="col-12">
                                         <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
@@ -188,10 +129,278 @@
                                     </div>
                                     <div class="col-12 px-0">
                                         <div class="row mx-0 gap-2">
-                                            <div class="col offcanvasheadings fs-md-18 fs-16 text-black fw-500"><span class="ps-3">About Dating</span></div>
-                                            <div class="col-auto fs-md-18 fs-16 text-theme2 fw-600">+22%</div>
+                                            <div class="col offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">About Dating</span></div>
+                                            <div class="col-auto fs-lg-18 fs-md-16 fs-14 text-theme2 fw-600">+22%</div>
                                             <div class="col-12 d-flex"><textarea name="" id="" cols="30" rows="2" placeholder="500" class="w-100 m-0 rounded-4 reportcomment fs-md-14 fs-12 text-muted m-0 p-2" disabled></textarea></div>
                                             <div class="col-12  fs-md-14 fs-12 text-muted">Do not include social media handles or other contact information in your profile.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Passions</span></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Harry Potter</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Spa</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Hot Yoga</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Love</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Friendship</div>
+                                                    <div class="col d-flex justify-content-end"><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampletpassion"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Relationship Goals</span></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Looking for</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Long-Term Partner</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#examplerelationship"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Relationship Type</span> <p class="fs-lg-12 fs-md-10 fs-8 text-muted fw-500 m-0 d-inline-block">Open To...</p></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Open to exploring</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Monogamy</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Polyamory</div>
+                                                    <div class="col d-flex justify-content-end"><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Languages I Know</span> <p class="fs-lg-12 fs-md-10 fs-8 text-muted fw-500 m-0 d-inline-block">Add languages</p></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">English</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Arabic</div>
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Catalan</div>
+                                                    <div class="col d-flex justify-content-end"><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Basics</span> <p class="fs-lg-12 fs-md-10 fs-8 text-muted fw-500 m-0 d-inline-block">New</p></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Zodiac</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Education</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Family Plans</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">COVID Vaccine</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Personality Type</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Communication Style</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Love Style</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Lifestyle</span> <p class="fs-lg-12 fs-md-10 fs-8 text-muted fw-500 m-0 d-inline-block">New</p></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Pets</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Drinking</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Smoking</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Workout</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Dietary Preference</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Social Media</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 mb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Sleeping Habits</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Job Title</span></div>
+                                                    <div class="col-auto fs-lg-18 fs-md-16 fs-14 text-theme2 fw-600">+3%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Add Job Title</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampletsearchadd"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Company</span></div>
+                                                    <div class="col-auto fs-lg-18 fs-md-16 fs-14 text-theme2 fw-600">+3%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Add Job Title</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampletsearchadd"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Show my Instagram</span></div>
+                                                    <div class="col-auto fs-lg-18 fs-md-16 fs-14 text-theme2 fw-600">+3%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Connect Instagram</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">School</span></div>
+                                                    <div class="col-auto fs-lg-18 fs-md-16 fs-14 text-theme2 fw-600">+3%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Add School</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampletSearch"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Living In</span></div>
+                                                    <div class="col-auto fs-lg-18 fs-md-16 fs-14 text-theme2 fw-600">+3%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Add City</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampletSearch"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Spotify Anthem</span></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Choose anthem</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampletSearch"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Top Spotify Artists</span></div>
+                                                    <div class="col-auto fs-lg-18 fs-md-16 fs-14 text-theme2 fw-600">+3%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-600 text-black">Contect Spotify</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><span class="d-flex fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Add</span><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampletSearch"><img src="assets/img/icon/add.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Control Your Profile</span> <p class="fs-lg-12 fs-md-10 fs-8 text-muted fw-500 m-0 d-inline-block">Dating Plus+</p></div>
+                                            <div class="col-12 ">
+                                                <div class="form-check form-switch pb-2 border-bottom border-bottom-1 custom-switch p-0 d-flex align-items-center justify-content-between gap-2">
+                                                    <div class="w-85"><label class="form-check-label fs-md-14 fs-sm-12 fs-10 fw-500 text-black w-100" for="Phot">Smart Photos</label></div>
+                                                    <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Phot">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 ">
+                                                <div class="form-check form-switch pb-2 border-bottom border-bottom-1 custom-switch p-0 d-flex align-items-center justify-content-between gap-2">
+                                                    <div class="w-85"><label class="form-check-label fs-md-14 fs-sm-12 fs-10 fw-500 text-black w-100" for="Phot1">Smart Photos</label></div>
+                                                    <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Phot1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Gender</span></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Female</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0 gap-2 align-items-center">
+                                            <div class="col-12 offcanvasheadings fs-lg-18 fs-md-16 fs-14 text-black fw-500"><span class="ps-3">Sexual Orientation</span></div>
+                                            <div class="col-12 p0 edit-info">
+                                                <div class="row mx-0 g-md-3 g-2 pb-2 border-bottom border-bottom-1 align-items-center">
+                                                    <div class="col-auto fs-md-14 fs-sm-12 fs-10 fw-500 text-muted">Straight</div>
+                                                    <div class="col d-flex gap-3 justify-content-end"><div class="h-lg-18px h-13px righteditbtn d-flex" data-bs-toggle="modal" data-bs-target="#exampleSexual"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></div></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -210,32 +419,11 @@
 
 
                             <!-- Edit Info End -->
-                            <div class="col-12 order-3 py-lg-4 py-md-3 fw-bold fs-lg-30 fs-md-25 fs-20 text-black text-center d-none"><span class="opetionalHeading position-relative">Optional</span></div>
-                            <div class="col-12 px-0 order-4 d-none">
-                                <div class="row mx-0 gap-3">
-                                    <div class="col text-nowrap">
-                                        <div class="fs-md-14 fs-12 text-muted mb-2">Passions</div>
-                                        <div class=""><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill"  data-bs-toggle="modal" data-bs-target="#exampletpassion">+ Add Passions</button></div>
-                                    </div>
-                                    <div class="col text-nowrap">
-                                        <div class="fs-md-14 fs-12 text-muted mb-2">Sexual Orientation</div>
-                                        <div class=""><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleSexual">+ Add Sexual Orientation</button></div>
-                                    </div>
-                                    <div class="col text-nowrap">
-                                        <div class="fs-md-14 fs-12 text-muted mb-2">Looking for</div>
-                                        <div class=""><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill" data-bs-toggle="modal" data-bs-target="#examplerelationship">+ Add Relationship Intent</button></div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-12 px-0 mx-0 row g-3 justify-content-center align-items-center text-center mt-sm-5 mt-4 order-5">
-                                <div class="col-auto"><button class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" type="button" data-bs-toggle="modal" data-bs-target="#exampletrems">BACK</button></div>
-                                <div class="col-auto"><a href="index.html" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" type="submit">CONTINUE</a></div>
-                                <div class="col-12 mt-4 text-center">
-                                    <div class="mt-4"><a href="javascript:;" class="text-decoration-none text-muted fs-sm-14 fs-12" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Already have an account? Log in.</a></div>
-                                </div>
+                                <!-- <div class="col-auto"><button class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" type="button">BACK</button></div> -->
+                                <div class="col-auto"><a href="index.html" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" type="submit">SAVE</a></div>
                             </div>
                         </form>
-                    </div>
                 </div>
             </div>
         </div>
@@ -243,8 +431,549 @@
 
 
 
+    <!-- **Offcanvas -->
+    <!-- ?<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+    <div class="offcanvas offcanvas-end editinfo-offcanvas border-0" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title fs-md-18 fs-16 text-black fw-500" id="offcanvasRightLabel">
+                <form action="" class="searchgroup">
+                    <div class="input-group rounded-4">
+                        <span class="input-group-text border-0 bg-transparent d-flex w-40px p-2" id="basic-addon2"><img src="assets/img/icon/search.svg" class="w-100" alt=""></span>
+                        <input type="search" class="form-control border-0 shadow-none fs-md-14 fs-12 text-muted " placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon2">
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="btn-close shadow-none border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-4 contentForm">
+            <!-- *Relationship Type -->
+            <form class="row h-100 flex-column flex-nowrap d-none">
+                <div class="col-12">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 mb-1">Relationship Type</div>
+                    <div class="fs-md-14 fs-12 text-muted fw-500 text-center mb-3">What type of relationship are you open to?</div>
+                </div>
+                <div class="col-12 h-100 overflow-y-auto flex-fill">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row mx-0 align-items-center g-2">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad1" name="selector" class="form-check-input selector-item_radio">
+                                    <label for="rad1" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Polyamory</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad2" name="selector" class="form-check-input selector-item_radio">
+                                    <label for="rad2" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Monogamy</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad3" name="selector" class="form-check-input selector-item_radio">
+                                    <label for="rad3" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Open to exploring</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad4" name="selector" class="form-check-input selector-item_radio">
+                                    <label for="rad4" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Ethical non-monogamy</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-3"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE <span>3/3</span></button></div>
+            </form>
+            <!-- *Relationship Type End-->
+
+            <!-- *Add Languages -->
+            <form class="row h-100 flex-column flex-nowrap d-none">
+                <div class="col-12">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 mb-1">Languages I Know</div>
+                    <div class="fs-md-14 fs-12 text-muted fw-500 text-center mb-3">Select up to 5 languages you know and add them to your profile</div>
+                </div>
+                <div class="col-12 h-100 overflow-y-auto flex-fill">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row mx-0 align-items-center g-2">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad01" name="selector1" class="form-check-input selector-item_radio">
+                                    <label for="rad01" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">English</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad02" name="selector1" class="form-check-input selector-item_radio">
+                                    <label for="rad02" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Arabic</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad03" name="selector1" class="form-check-input selector-item_radio">
+                                    <label for="rad03" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Catalan</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="rad04" name="selector1" class="form-check-input selector-item_radio">
+                                    <label for="rad04" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Hindi</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-3"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE <span>3/5</span></button></div>
+            </form>
+            <!-- *Add Languages End-->
+
+            <!-- *Basics Info. -->
+            <form class="row h-100 flex-column flex-nowrap dnone">
+                <div class="col-12">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 mb-1">Basics</div>
+                    <div class="fs-md-14 fs-12 text-muted fw-500 text-center mb-3">Bring your best self forward by adding more about you</div>
+                </div>
+                <div class="col-12 h-100 overflow-y-auto flex-fill">
+                    <div class="row gap-4">
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">What is your zodiac sign?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad001" name="selector0" class="form-check-input selector-item_radio">
+                                    <label for="rad001" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Capricorn</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad002" name="selector0" class="form-check-input selector-item_radio">
+                                    <label for="rad002" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Aquarius</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad003" name="selector0" class="form-check-input selector-item_radio">
+                                    <label for="rad003" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Pisces</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad004" name="selector0" class="form-check-input selector-item_radio">
+                                    <label for="rad004" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Aries</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad005" name="selector0" class="form-check-input selector-item_radio">
+                                    <label for="rad005" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Taurus</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">What is your education level?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0001" name="selector01" class="form-check-input selector-item_radio">
+                                    <label for="rad0001" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Bachelors</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0002" name="selector01" class="form-check-input selector-item_radio">
+                                    <label for="rad0002" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">In College</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0003" name="selector01" class="form-check-input selector-item_radio">
+                                    <label for="rad0003" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">High School</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0004" name="selector01" class="form-check-input selector-item_radio">
+                                    <label for="rad0004" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">PhD</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0005" name="selector01" class="form-check-input selector-item_radio">
+                                    <label for="rad0005" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">In Grad School</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0006" name="selector01" class="form-check-input selector-item_radio">
+                                    <label for="rad0006" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Masters</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">Do you want children?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad11" name="selector02" class="form-check-input selector-item_radio">
+                                    <label for="rad11" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">I want children</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad12" name="selector02" class="form-check-input selector-item_radio">
+                                    <label for="rad12" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">I don't want children</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad13" name="selector02" class="form-check-input selector-item_radio">
+                                    <label for="rad13" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">I have children and want more</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad14" name="selector02" class="form-check-input selector-item_radio">
+                                    <label for="rad14" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">I have children and don't want more</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad15" name="selector02" class="form-check-input selector-item_radio">
+                                    <label for="rad15" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Not sure yet</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">Are you vaccinated?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad011" name="selector03" class="form-check-input selector-item_radio">
+                                    <label for="rad011" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Vaccinated</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad012" name="selector03" class="form-check-input selector-item_radio">
+                                    <label for="rad012" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Unvaccinated</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad013" name="selector03" class="form-check-input selector-item_radio">
+                                    <label for="rad013" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Prefer not to say</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">What’s your Personality Type?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0011" name="selector04" class="form-check-input selector-item_radio">
+                                    <label for="rad0011" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">INTJ</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0012" name="selector04" class="form-check-input selector-item_radio">
+                                    <label for="rad0012" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">INTP</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0013" name="selector04" class="form-check-input selector-item_radio">
+                                    <label for="rad0013" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">ENTJ</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0014" name="selector04" class="form-check-input selector-item_radio">
+                                    <label for="rad0014" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">ENTJ</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0015" name="selector04" class="form-check-input selector-item_radio">
+                                    <label for="rad0015" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">ENTJ</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0016" name="selector04" class="form-check-input selector-item_radio">
+                                    <label for="rad0016" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">ENTJ</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">What is your communication style?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0021" name="selector05" class="form-check-input selector-item_radio">
+                                    <label for="rad0021" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">I stay on WhatsApp all day</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0022" name="selector05" class="form-check-input selector-item_radio">
+                                    <label for="rad0022" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Big time texter</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0023" name="selector05" class="form-check-input selector-item_radio">
+                                    <label for="rad0023" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Phone caller</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0024" name="selector05" class="form-check-input selector-item_radio">
+                                    <label for="rad0024" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Video chatter</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0025" name="selector05" class="form-check-input selector-item_radio">
+                                    <label for="rad0025" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">I'm slow to answer on WhatsApp</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0026" name="selector05" class="form-check-input selector-item_radio">
+                                    <label for="rad0026" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Bad texter</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">How do you receive love?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0031" name="selector06" class="form-check-input selector-item_radio">
+                                    <label for="rad0031" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Thoughtful gestures</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0032" name="selector06" class="form-check-input selector-item_radio">
+                                    <label for="rad0032" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Presents</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0033" name="selector06" class="form-check-input selector-item_radio">
+                                    <label for="rad0033" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Touch</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0034" name="selector06" class="form-check-input selector-item_radio">
+                                    <label for="rad0034" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Compliments</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad0035" name="selector06" class="form-check-input selector-item_radio">
+                                    <label for="rad0035" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Time together</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-3"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">DONE</button></div>
+            </form>
+            <!-- *Basics Info. End-->
+
+            <!-- *Lifestyle -->
+            <form class="row h-100 flex-column flex-nowrap d-none">
+                <div class="col-12">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 mb-1">Lifestyle</div>
+                    <div class="fs-md-14 fs-12 text-muted fw-500 text-center mb-3">Bring your best self forward by adding your lifestyle</div>
+                </div>
+                <div class="col-12 h-100 overflow-y-auto flex-fill">
+                    <div class="row gap-4">
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">Do you have any pets?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad101" name="selecto0" class="form-check-input selector-item_radio">
+                                    <label for="rad101" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Dog</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad102" name="selecto0" class="form-check-input selector-item_radio">
+                                    <label for="rad102" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Cat</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad103" name="selecto0" class="form-check-input selector-item_radio">
+                                    <label for="rad103" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Reptile</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad104" name="selecto0" class="form-check-input selector-item_radio">
+                                    <label for="rad104" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Bird</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad105" name="selecto0" class="form-check-input selector-item_radio">
+                                    <label for="rad105" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Fish</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">How often do you drink?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad201" name="selecto01" class="form-check-input selector-item_radio">
+                                    <label for="rad201" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Not for me</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad202" name="selecto01" class="form-check-input selector-item_radio">
+                                    <label for="rad202" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Sober</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad203" name="selecto01" class="form-check-input selector-item_radio">
+                                    <label for="rad203" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Sober curious</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad204" name="selecto01" class="form-check-input selector-item_radio">
+                                    <label for="rad204" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">On special occasions</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad205" name="selecto01" class="form-check-input selector-item_radio">
+                                    <label for="rad205" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Socially on weekends</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad206" name="selecto01" class="form-check-input selector-item_radio">
+                                    <label for="rad206" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Most Nights</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">How often do you smoke?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad301" name="selecto02" class="form-check-input selector-item_radio">
+                                    <label for="rad301" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Social smoker</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad302" name="selecto02" class="form-check-input selector-item_radio">
+                                    <label for="rad302" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Smoker when drinking</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad303" name="selecto02" class="form-check-input selector-item_radio">
+                                    <label for="rad303" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Non-smoker</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad304" name="selecto02" class="form-check-input selector-item_radio">
+                                    <label for="rad304" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Smoker</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad305" name="selecto02" class="form-check-input selector-item_radio">
+                                    <label for="rad305" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Trying to quit</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">Do you workout?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad401" name="selecto03" class="form-check-input selector-item_radio">
+                                    <label for="rad401" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Everyday</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad402" name="selecto03" class="form-check-input selector-item_radio">
+                                    <label for="rad402" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Often</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad403" name="selecto03" class="form-check-input selector-item_radio">
+                                    <label for="rad403" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Sometimes</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad404" name="selecto03" class="form-check-input selector-item_radio">
+                                    <label for="rad404" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Never</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">What are your dietary preferences?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad501" name="selecto04" class="form-check-input selector-item_radio">
+                                    <label for="rad501" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Vegan</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad502" name="selecto04" class="form-check-input selector-item_radio">
+                                    <label for="rad502" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Vegetarian</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad503" name="selecto04" class="form-check-input selector-item_radio">
+                                    <label for="rad503" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Pescatarian</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad504" name="selecto04" class="form-check-input selector-item_radio">
+                                    <label for="rad504" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Kosher</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad505" name="selecto04" class="form-check-input selector-item_radio">
+                                    <label for="rad505" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Carnivore</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad506" name="selecto04" class="form-check-input selector-item_radio">
+                                    <label for="rad506" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Omnivore</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">How active are you on social media?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad601" name="selecto05" class="form-check-input selector-item_radio">
+                                    <label for="rad601" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Influencer status</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad602" name="selecto05" class="form-check-input selector-item_radio">
+                                    <label for="rad602" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Socially active</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad603" name="selecto05" class="form-check-input selector-item_radio">
+                                    <label for="rad603" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Off the grid</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad604" name="selecto05" class="form-check-input selector-item_radio">
+                                    <label for="rad604" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Passive scroller</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="fs-md-16 fs-14 text-black offcanvasheadings fw-600 mb-3"><span class="ps-3">What are your sleeping habits?</span></div>
+                            <div class="row mx-0 align-items-center g-2 bg-light py-3">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad701" name="selecto06" class="form-check-input selector-item_radio">
+                                    <label for="rad701" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Early bird</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad702" name="selecto06" class="form-check-input selector-item_radio">
+                                    <label for="rad702" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Night owl</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad703" name="selecto06" class="form-check-input selector-item_radio">
+                                    <label for="rad703" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">In a spectrum</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-3"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">DONE</button></div>
+            </form>
+            <!-- *Lifestyle End-->
+
+            <!-- *Gender Type -->
+            <form class="row h-100 flex-column flex-nowrap d-none">
+                <div class="col-12">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 mb-4">Gender Type</div>
+                </div>
+                <div class="col-12 h-100 overflow-y-auto flex-fill">
+                    <div class="row gap-4">
+                        <div class="col-12">
+                            <div class="row mx-0 align-items-center g-2">
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="gender1" name="gender" class="form-check-input selector-item_radio">
+                                    <label for="gender1" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Male</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="gender2" name="gender" class="form-check-input selector-item_radio" checked>
+                                    <label for="gender2" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Female</label>
+                                </div>
+                                <div class="col-auto form-check  custom-check px-1 selecotr-item">
+                                    <input type="checkbox" id="gender3" name="gender" class="form-check-input selector-item_radio">
+                                    <label for="gender3" class="selector-item_label py-1 px-3 fs-md-14 fs-12 rounded-pill text-center w-100">Everyone</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="form-check form-switch pb-2 custom-switch p-0 d-flex align-items-center justify-content-between gap-2">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-sm-12 fs-10 fw-500 text-black w-100" for="genderswitch">Show my gender on my profile</label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="genderswitch" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-3"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">DONE</button></div>
+            </form>
+            <!-- *Gender Type End-->
+        </div>
+    </div>
+
 
     <!-- *Modals -->
+    <!-- *******Title And Add Modal -->
+    <div class="modal fade searchModal" id="exampletsearchadd" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampletsearchaddLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 px-0 w-100" id="exampletsearchaddLabel">Add Your Favorite</div>
+                </div>
+                <div class="modal-body px-sm-4 px-3 pb-4">
+                    <form action="" class="searchgroup">
+                        <div class="input-group rounded-4">
+                            <!-- <span class="input-group-text border-0 bg-transparent d-flex w-40px p-2" id="basic-addon2"><img src="assets/img/icon/search.svg" class="w-100" alt=""></span> -->
+                            <input type="search" class="form-control border-0 shadow-none fs-md-14 fs-12 text-muted " placeholder="Add Your Title" aria-label="Add Your Title" aria-describedby="basic-addon2">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Title And Add Modal End-->
+    <!-- *******Search And Add Modal -->
+    <div class="modal fade searchModal" id="exampletSearch" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampletSearchLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="fs-md-25 fs-20 text-black text-center fw-600 px-0 w-100" id="exampletSearchLabel">Finding...</div>
+                </div>
+                <div class="modal-body px-sm-4 px-3 pb-4">
+                    <form action="" class="searchgroup">
+                        <div class="input-group rounded-4">
+                            <span class="input-group-text border-0 bg-transparent d-flex w-40px p-2" id="basic-addon2"><img src="assets/img/icon/search.svg" class="w-100" alt=""></span>
+                            <input type="search" class="form-control border-0 shadow-none fs-md-14 fs-12 text-muted " placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon2">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *Search And Add Modal End-->
     <!-- *******Passions Modal -->
     <div class="modal fade" id="exampletpassion" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampletpassionLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -289,7 +1018,7 @@
                     <form class="row g-2">
                         <div class="col-12 fs-14 text-muted fw-600 text-center">Select up to 3</div>
                         <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
-                            <input type="checkbox" id="radio001" name="selector" class="form-check-input selector-item_radio ">
+                            <input type="checkbox" id="radio001" name="selector" class="form-check-input selector-item_radio " checked>
                             <label for="radio001" class="selector-item_label p-2 fs-md-14 fs-12 rounded-3 text-start text-black  w-100">Straight</label>
                         </div>
                         <div class="col-12 form-check  custom-check px-1 selecotr-item reportItem reportreason">
@@ -328,7 +1057,7 @@
                 </div>
                 <div class="modal-footer border-0 justify-content-center">
                     <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
-                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONTINUE <span>0/3</span></button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">DONE <span>0/3</span></button>
                 </div>
             </div>
         </div>

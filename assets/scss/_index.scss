@@ -365,3 +365,46 @@
     }
   }
 }
+
+
+
+// *Chat Box
+.chateBox {
+  & .innerChatBox {
+    & .chatBoxHeader ,  & .chatBoxFooter {
+      box-shadow: 0px 0px 10px rgba($theme1, 0.05);
+    }
+    & .chatBoxHeader {
+      // border: 1.6px solid rgba($black, 0.3);
+      border-radius: 8px 8px 0px 0px;
+      & .userpic {
+        position: relative;
+        // border: 1.6px solid lighten($success, 20);
+        transition: all 0.3s;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border: 2px solid $white;
+          top: 60%;
+          right: -2px;
+          background-color: lighten($success, 20);
+          border-radius: 50px;
+          transition: all 0.3s;
+        }
+        & img {
+          object-fit: cover;
+        }
+      }
+    }
+    & .chatBoxFooter {
+      border-radius: 0px 0px 8px 8px;
+      & .upload {
+        & label {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

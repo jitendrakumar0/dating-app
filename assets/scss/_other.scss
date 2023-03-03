@@ -26,3 +26,77 @@
         }
     }
 }
+
+// ! Edit Informatin Page
+.editinfoPage {
+    & .innersection {
+        & .contentForm {
+            & .form {
+                & .edit-info {
+                    transition: all 0.3s;
+                    & .righteditbtn {
+                        cursor: pointer;
+                        & img {
+                            transition: all 0.3s;
+                            filter: grayscale(1);
+                        }
+                        &:hover{
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ? Edit-info-offcanvas
+
+.editinfo-offcanvas {
+    & .offcanvas-header {
+        box-shadow: 0px 0px 20px rgba($theme1, 0.1);
+        & .offcanvas-title {
+            & .searchgroup {
+                & .input-group {
+                    border: 1.6px solid rgba($black, 0.5);
+                    & .input-group-text {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.searchModal {
+    & .modal-dialog {
+        & .modal-content {
+            & .modal-body {
+                & .searchgroup {
+                    & .input-group {
+                        border: 1.6px solid rgba($black, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 991.99px) {
+//     .editinfoPage {
+//         & .innersection {
+//             & .contentForm {
+//                 & .form {
+//                     & .chooseImageSide {
+//                         position: sticky;
+//                         top: 150px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+    
+// }
