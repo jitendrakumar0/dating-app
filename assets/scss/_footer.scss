@@ -44,3 +44,34 @@
         }
     }
 }
+
+
+
+.bottomBar {
+    & .innerBar {
+        & .bottombarTabs {
+            & .linkTab {
+                transition: all 0.3s;
+                & img {
+                    filter: opacity(0.5);
+                    transition: all 0.3s;
+                }
+                & .likes {
+                    top: -8px;
+                    right: -9px;
+                    background-color: rgba($theme2, 0.5);
+                }
+                &:hover{
+                    & img {
+                        filter: opacity(1);
+                    }
+                }
+                &.active{
+                    & img {
+                        filter: opacity(1);
+                    }
+                }
+            }
+        }
+    }
+}

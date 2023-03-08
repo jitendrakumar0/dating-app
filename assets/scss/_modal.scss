@@ -321,12 +321,16 @@
 
 
   // ***************?Offcanvass*********************
+  @media screen and (min-width: 992px) {
+    .datingPrivecyOffcanvas {
+      height: calc(100% - 80px);
+      top: unset !important;
+      bottom: 0;
+    }
+  }
   // ****datingPrivecyOffcanvas
   .datingPrivecyOffcanvas {
-    height: calc(100% - 80px);
-    top: unset !important;
     width: 400px;
-    bottom: 0;
     & .offcanvas-header {
     box-shadow: 0px 0px 20px rgba($theme1, 0.1);
     }

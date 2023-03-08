@@ -60,7 +60,7 @@
                 <!-- *Onboarding Section -->
                 <div class="container-fluid maindashboard d-lg-flex px-0 h-100">
                         <!-- *!Left Side Bar -->
-                        <div class="vh-100 px-0 bg-white leftProfileSide">
+                        <div class="vh-100 px-0 bg-white leftProfileSide d-lg-block d-none">
                             <div class="row h-100 flex-column flex-nowrap">
                                 <!-- *Top Nav* -->
                                 <div class="col-12">
@@ -289,16 +289,16 @@
                         </div>
                         <!-- *! Left Side Bar End-->
                         <!-- *! Right Side Start -->
-                        <div class="rightContentSide p-3 py-5 my-lg-0 my-5 h-100 d-none">
+                        <div class="rightContentSide p-lg-3 pb-5 py-lg-5 h-100 dnone">
                             <div class="row h-100 innersection align-items-center dnone">
                                 <!-- *Account Profile -->
-                                <div class="col-12 dnone">
-                                    <div class="matchuserimg m-auto rounded-5 position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-80 rounded-5" alt="">
+                                <div class="col-12 accountProfile d-none">
+                                    <div class="matchuserimg m-auto rounded-5 position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-lg-80 h-100 rounded-5" alt="">
                                     <div class="row mx-0 p-3 gap-3 userProfile ">
                                         <div class="col-12 px-0 pb-3 border-bottom border-bottom-1 border-theme1">
                                             <div class="row mx-0 align-items-center">
-                                                <div class="col-9"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-black">Pooja 008</div></div>
-                                                <div class="col-3 d-flex align-items-center justify-content-between">
+                                                <div class="col"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-black">Pooja 008</div></div>
+                                                <div class="col-auto d-flex align-items-center justify-content-between gap-3">
                                                     <div class="h-25px d-inline-flex unverifieduser active" data-bs-toggle="modal" data-bs-target="#exampleprofileverified"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div>
                                                     <a href="edit-info.html" class="h-25px d-inline-flex editbutton"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></a>
                                                 </div>
@@ -326,10 +326,10 @@
                                 <!-- *Account Profile End-->
 
                                 <!-- *Find User -->
-                                <div class="col-12 Finduseraccount d-none">
-                                    <div class="position-relative">
-                                        <div class="matchuserimg shadow-none d-flex align-items-center justify-content-center m-auto rounded-5"><div class="h-100px w-100px rounded-circle findingaccountImg video-play-button position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
-                                        <div class="bufringIconPerent disableicone position-absolute ">
+                                <div class="col-12 Finduseraccount h-100 d-none">
+                                    <div class="position-relative h-100">
+                                        <div class="matchuserimg h-100 shadow-none d-flex align-items-center justify-content-center m-auto rounded-5"><div class="h-100px w-100px rounded-circle findingaccountImg video-play-button position-relative"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                        <div class="bufringIconPerent disableicone position-absolute">
                                             <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-center gap-2 bufringLists disable">
                                                 <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/refresh.svg" class="w-100 h-100" alt=""></a></li>
                                                 <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/close.svg" class="w-100 h-100" alt=""></a></li>
@@ -341,7 +341,7 @@
                                         
                                     </div>
                                     <!-- *Arrow Keys -->
-                                    <div class="row mx-0 mt-4 g-xl-3 g-2 bottomKeyInput align-items-center justify-content-center">
+                                    <div class="row mx-0 mt-4 g-xl-3 g-2 d-lg-flex d-none bottomKeyInput align-items-center justify-content-center">
                                         <div class="col-auto">
                                             <div class="switches-button position-relative d-flex align-items-center p-0 bg-theme2 rounded-pill w-120px h-25px">
                                                 <input type="radio" class="position-absolute top-0" id="switchsho" name="switchPla" value="showw" checked="checked" />
@@ -368,19 +368,19 @@
                                 <!-- *Find User End-->
 
                                 <!-- *Finding User Profie -->
-                                <div class="col-12 Finduseraccount d-none">
-                                    <div class="position-relative">
-                                        <div class="matchuserimg liveuserProfile m-auto rounded-5 position-relative"><img src="assets/img/index/profilePic3big.jpg" class="w-100 h-100 rounded-5" alt="">
-                                            <div class="bufringIconPerent position-absolute ">
-                                                <button class="plusBtn shadow-none border-0 d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-3 bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><img src="assets/img/icon/close.svg" class="w-100 h-100" alt=""></button>
+                                <div class="col-12 Finduseraccount h-100 dnone">
+                                    <div class="position-relative innerchild">
+                                        <div class="matchuserimg liveuserProfile m-auto rounded-lg-5 rounded-0 position-relative"><img src="assets/img/index/profilePic2big.jpg" class="w-100 h-100 rounded-lg-5 rounded-0" alt="">
+                                            <div class="bufringIconPerent position-absolute bottom-20px end-20px">
+                                                <button class="plusBtn shadow-none border-0 d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><img src="assets/img/icon/close.svg" class="w-lg-100 h-lg-100 w-80 h-80" alt=""></button>
                                                 <div class="collapse position-absolute end-0 bottom-60px" id="collapseExample">
                                                     <div class="card p-0 bg-transparent border-0 card-body">
                                                         <ul class="list-unstyled m-0 p-0 d-flex flex-column align-items-center justify-content-between gap-2 bufringLists">
-                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/refresh.svg" class="w-100 h-100" alt=""></a></li>
-                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/close.svg" class="w-100 h-100" alt=""></a></li>
-                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/star.svg" class="w-100 h-100" alt=""></a></li>
-                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/heart.svg" class="w-100 h-100" alt=""></a></li>
-                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-lg-50px h-lg-50px w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/charg.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/refresh.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/close.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/star.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/heart.svg" class="w-100 h-100" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/charg.svg" class="w-100 h-100" alt=""></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -388,7 +388,7 @@
                                             <!-- User Name & Location-->
                                             <div class="position-absolute bottom-20px start-20px">
                                                 <div class="row mx-0 align-items-center">
-                                                    <div class="col-12 px-0 d-flex align-items-center gap-2"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-white">Rohit 007</div> <div class="h-25px d-inline-flex unverifieduser"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div></div>
+                                                    <div class="col-12 px-0 d-flex align-items-center gap-2"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-white">Neha 004</div> <div class="h-25px d-inline-flex unverifieduser"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div></div>
                                                     <div class="col-12 px-0 fs-10 fw-normal text-white d-flex align-items-center gap-2"><span class="d-flex h-15px"><img src="assets/img/icon/location-white.svg" class="h-100" alt=""></span>5 KM Away</div>
                                                 </div>
                                             </div>
@@ -401,7 +401,7 @@
                                         </div>
                                     </div>
                                 <!-- *Arrow Keys -->
-                                <div class="row mx-0 mt-4 g-xl-3 g-2 bottomKeyInput align-items-center justify-content-center">
+                                <div class="row mx-0 mt-4 g-xl-3 g-2 d-lg-flex d-none bottomKeyInput align-items-center justify-content-center">
                                     <div class="col-auto">
                                         <div class="switches-button position-relative d-flex align-items-center p-0 bg-theme2 rounded-pill w-120px h-25px">
                                             <input type="radio" class="position-absolute top-0" id="switchshoww1" name="switchPlan" value="showw" checked="checked" />
@@ -426,15 +426,28 @@
                                 <!-- *Arrow Keys End-->
                                 </div>
                                 <!-- *Finding User Profie End-->
+
+                                <!-- * BottomBar Start -->
+                                <div class="col-12 position-absolute bottomBar  bottom-0px start-0px bg-white py-2 rounded-4 d-lg-none d-block">
+                                    <div class="row mx-0 align-items-center innerBar py-1">
+                                        <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="index.html" class="linkTab active text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/home.svg" class="w-100" alt=""></a></div>
+                                        <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/categorys.svg" class="w-100" alt=""></a></div>
+                                        <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab position-relative text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/star2.svg" class="w-100" alt=""><span class="d-flex likes justify-content-center align-items-center w-20px h-20px fs-md-10 fs-8 text-white fw-500 p-2 rounded-circle position-absolute">35</span></a></div>
+                                        <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/chat.svg" class="w-100" alt=""></a></div>
+                                        <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="profilepage.html" class="linkTab text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/person.svg" class="w-100" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <!-- * BottomBar End -->
+
                             </div>
                         </div>
                         <!-- ! Chat Box -->
-                        <div class="rightContentSide chateBox p-3 h-100">
+                        <div class="rightContentSide chateBox p-3 h-100 d-none">
                             <div class="row mx-0 h-100 flex-column flex-nowrap innerChatBox">
-                                <div class="col-12 h-60px chatBoxHeader bg-white d-flex align-items-center">
+                                <div class="col-12 h-60px chatBoxHeader bg-white d-flex align-items-center px-sm-2 px-0">
                                     <div class="row mx-0 align-items-center">
                                         <div class="col-auto">
-                                            <div class="w-40px h-40px rounded-circle userpic"><img src="assets/img/index/profilePic2small.jpg" class="w-100 h-100 rounded-circle" alt=""></div>
+                                            <div class="w-40px h-40px rounded-circle userpic" data-bs-toggle="modal" data-bs-target="#examplechatuserinfor"><img src="assets/img/index/profilePic2small.jpg" class="w-100 h-100 rounded-circle" alt=""></div>
                                         </div>
                                         <div class="col">
                                             <div class="text-black fs-md-14 fs-12 fw-600">Neha</div>
@@ -443,13 +456,57 @@
                                     </div>
                                 </div>
                                 <div class="col-12 h-100 flex-fill overflow-hidden chatBoxBody bgwhite">
-                                    <div class="row h-100 overflow-y-auto">
-                                        <div class="col-12">
-                                            <!-- <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod vel quasi iusto odio eos, facere ad possimus consequuntur in ratione. Non deleniti delectus optio saepe minima eaque ducimus quod nihil repellat beatae deserunt autem corporis tempora odio rem ipsam assumenda voluptatem, numquam modi recusandae praesentium explicabo? Obcaecati temporibus maiores ducimus ut recusandae blanditiis earum, illum sapiente exercitationem optio asperiores eveniet unde repellendus officia deserunt culpa odit placeat aut beatae! Quam explicabo id, corporis cum consectetur quasi, delectus a, animi enim fugit sunt tempora! Suscipit eligendi quasi alias cupiditate adipisci reiciendis cum. Quaerat optio eos fugit explicabo dignissimos dolorem doloribus aperiam! Quidem deserunt, veritatis numquam dolorum labore nulla architecto magnam autem vitae reprehenderit consectetur velit officia quisquam aspernatur distinctio cupiditate! Molestias laboriosam perspiciatis vero sint repellat tenetur fugiat rerum quidem corporis maxime omnis nemo ullam, quae pariatur vitae sapiente numquam hic aperiam obcaecati porro accusantium et optio itaque. Recusandae hic quod eaque accusamus cum rerum enim, harum, impedit architecto reprehenderit repudiandae dolorum optio, dolor doloremque suscipit sint nemo natus explicabo aspernatur. Laboriosam suscipit incidunt animi placeat, ad id! Natus laboriosam omnis optio eveniet vel ad a totam earum maxime saepe soluta hic, dolorum modi nulla possimus, necessitatibus dignissimos repellendus. Molestias reiciendis veniam laboriosam praesentium nobis, vitae, ratione, quam nihil corporis explicabo voluptates atque perferendis! Voluptatem perspiciatis architecto nisi natus. Accusantium asperiores sequi at, recusandae ullam similique rem, consequatur, natus ipsum quisquam ducimus fuga consequuntur quam pariatur qui. Nihil, necessitatibus tempora voluptate consequatur velit accusantium deleniti, tempore ex voluptas quos laudantium rem aperiam praesentium blanditiis officia quam est dolorum ab modi debitis. Consequatur iure consectetur voluptas voluptatibus nihil molestias qui officiis autem? Temporibus error dolore earum vero optio aperiam voluptatem sed facere velit autem, dolorem mollitia molestias cum omnis veniam, alias distinctio sunt facilis dolor ipsam dignissimos, sequi consequatur repudiandae nisi? Optio cum natus provident hic saepe nostrum sint sit ea assumenda a, dolore nam error odio voluptas quas. Velit perferendis adipisci asperiores voluptates. Esse repellat deleniti odio dicta repudiandae voluptatibus et consequuntur itaque sit dignissimos, cum sunt, harum id temporibus quibusdam eius laboriosam! Iste velit earum illo ipsam amet id voluptas totam deserunt mollitia? Molestiae vero possimus nobis omnis quisquam! Fuga, pariatur maiores natus libero molestiae, qui nihil totam iusto quod voluptates odio non neque modi, animi laborum iste quaerat. Consequuntur, odio et praesentium expedita accusamus aut ea impedit odit provident. Sapiente a inventore enim atque perspiciatis rerum facere quidem harum quisquam, natus, dolor debitis, itaque possimus aliquam sunt iusto. Dolor totam ad consectetur, neque accusantium ullam assumenda fugiat voluptate. In mollitia nulla quibusdam quas blanditiis tempora ipsa incidunt laborum consequatur, beatae veritatis ad saepe vero doloremque cumque perferendis accusantium natus sapiente eos eveniet facilis obcaecati magnam recusandae! Non corporis velit et cupiditate, harum ab. Quia, minima voluptatum excepturi sint iure neque unde inventore ut saepe error, architecto corporis recusandae iste fuga! Pariatur officia non molestias reprehenderit et, aperiam quia, atque ratione, consectetur magni saepe sint ab doloremque ipsum voluptatum velit repellat placeat quod recusandae expedita eos dignissimos nemo. Veniam.</div> -->
+                                    <div class="row h-100 overflow-y-auto innerbody">
+                                        <div class="col-12 p-md-4 p-sm-3 p-2 innerBox">
+                                            <div class="row mx-0 gap-4">
+                                                <div class="col-12"><div class=" datetime text-center"><span class="bg-light px-3 position-relative zi-1 fs-md-10 fs-8 fw-normal text-muted">Yesterday</span></div></div>
+                                                <div class="col-12 chatCard p-0">
+                                                    <div class="row mx-0">
+                                                        <div class="col-auto pe-0"><div class="w-40px h-40px rounded-circle border border-1 border-muted ChatUserImg"><img src="assets/img/index/profilePic2small.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                                        <div class="col-sm-8 col">
+                                                            <div class="chatUser fs-md-12 fs-10 text-muted fw-500 rounded p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus soluta sequi quo dolorum expedita explicabo quae fugit! Distinctio atque aut sit nisi optio numquam, animi ipsum, a quidem adipisci quia minus totam ipsam omnis debitis earum facere sequi minima.
+                                                                <div class="mt-2 fs-md-10 fs-8 fw-normal text-muted">Yesterday 6:00 PM</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 chatCard p-0">
+                                                    <div class="row mx-0 justify-content-end">
+                                                        <div class="col-sm-8 col">
+                                                            <div class="selfUser fs-md-12 fs-10 text-muted fw-500 rounded p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, incidunt maiores? Dolorem porro nesciunt perferendis est tempore, ut delectus voluptate, minus, inventore fuga doloremque? Error?
+                                                                <div class="mt-2 fs-md-10 fs-8 fw-normal text-muted text-end">Yesterday 6:05 PM</div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-end mt-2"><div class="w-md-150px w-sm-120px w-100px h-md-150px h-sm-120px h-100px rounded-4 sendFile"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-4" alt=""></div></div>
+                                                        </div>
+                                                        <div class="col-auto ps-0"><div class="w-40px h-40px rounded-circle border border-1 border-muted ChatUserImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12"><div class=" datetime text-center"><span class="bg-light px-3 position-relative zi-1 fs-md-10 fs-8 fw-normal text-muted">Today</span></div></div>
+                                                <div class="col-12 chatCard p-0">
+                                                    <div class="row mx-0">
+                                                        <div class="col-auto pe-0"><div class="w-40px h-40px rounded-circle border border-1 border-muted ChatUserImg"><img src="assets/img/index/profilePic2small.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                                        <div class="col-sm-8 col">
+                                                            <div class="chatUser fs-md-12 fs-10 text-muted fw-500 rounded p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odit mollitia alias, commodi eius eum!
+                                                                <div class="mt-2 fs-md-10 fs-8 fw-normal text-muted">9:00 AM</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 chatCard p-0">
+                                                    <div class="row mx-0 justify-content-end">
+                                                        <div class="col-sm-8 col">
+                                                            <div class="selfUser fs-md-12 fs-10 text-muted fw-500 rounded p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit impedit commodi voluptatibus asperiores soluta minima, fuga consequatur laborum magnam.
+                                                                <div class="mt-2 fs-md-10 fs-8 fw-normal text-muted text-end">9:15 AM</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto ps-0"><div class="w-40px h-40px rounded-circle border border-1 border-muted ChatUserImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 chatBoxFooter h-60px bg-white d-flex align-items-center">
+                                <div class="col-12 chatBoxFooter h-md-60px h-sm-50px h-45px bg-white d-flex align-items-center px-sm-2 px-0">
                                     <form class="row mx-0 w-100 align-items-center">
                                         <div class="col-auto d-flex align-items-center gap-3">
                                             <div class="upload">
@@ -959,6 +1016,65 @@
         </div>
     </div>
     <!-- *profileverified Modal End -->
+    
+    
+    <!-- *******chatuserinfor Modal******* -->
+    <div class="modal fade maindashboard " id="examplechatuserinfor" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="examplechatuserinforLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rightContentSide w-100">
+            <!-- <div class="modal-header border-0 ">
+                <div class="fs-md-25 fs-20 w-100 text-black text-center fw-600 px-0" id="examplechatuserinforLabel">Thank you for letting us know</div>
+                <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+                <div class="modal-body px-sm-4 px-3 pb-4 innersection">
+                    <div class="matchuserimg rounded-5 position-relative w-100 h-100"><img src="assets/img/index/profilePic2small.jpg" class="w-100 h-80 rounded-5" alt="">
+                        <div class="row mx-0 py-3 px-sm-3 px-2 gap-3 userProfile ">
+                            <div class="col-12 px-0 pb-3 border-bottom border-bottom-1 border-theme1">
+                                <div class="row mx-0 align-items-center">
+                                    <div class="col-9"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-black">Neha 004</div></div>
+                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                        <div class="h-25px d-inline-flex unverifieduser active" ><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div>
+                                        <!-- <a href="edit-info.html" class="h-25px d-inline-flex editbutton"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0  border-bottom border-bottom-1 border-theme1 pb-3">
+                                <div class="row mx-0 align-items-center mb-2">
+                                    <div class="col-auto pe-0"><div class="h-20px d-flex locationImg"><img src="assets/img/icon/location.svg" alt="" class="h-100"></div></div>
+                                    <div class="col"><div class="fs-lg-14 fs-md-12 fs-10 fw-500 text-muted">Lives in Jaipur <span>(6 kilometers away)</span></div></div>
+                                </div>
+                                <div class="row mx-0 align-items-center">
+                                    <div class="col-auto pe-0"><div class="h-20px d-flex"><img src="assets/img/icon/person.svg" alt="" class="h-100"></div></div>
+                                    <div class="col"><div class="fs-lg-14 fs-md-12 fs-10 fw-500 text-muted">Female</div></div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0  border-bottom border-bottom-1 border-theme1 pb-3">
+                                <div class="row mx-0 align-items-center">
+                                    <div class="col-12 fs-lg-14 fs-md-12 fs-10 fw-500 text-muted mb-2">I like fun.... Che boy ho girls but should be smart and educated</div>
+                                    <div class="col-12 fs-lg-14 fs-md-12 fs-10 fw-500 text-muted">Instagram id</div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0 border-bottom border-bottom-1 border-theme1 pb-3">
+                                <div class="row g-2 mx-0">
+                                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Harry Potter</button></div>
+                                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Spa</button></div>
+                                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Hot Yoga</button></div>
+                                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Love</button></div>
+                                    <div class="col-auto"><button type="button" class="shadow-none fs-md-14 fs-12 py-1 px-4 opetionBtn rounded-pill">Friendship</button></div>
+                                </div>
+                            </div>
+                            <div class="col-12 editprogress px-3 py-2 text-white text-center fw-500 fs-md-14 fs-12 bg-theme1">Profile (20% Complete)</div>
+                        </div>
+                        </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-dismiss="modal">UNMATCH</button>
+                    <button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12" data-bs-toggle="modal" data-bs-target="#examplereport">REPORT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *chatuserinfor Modal End -->
     
 
 
