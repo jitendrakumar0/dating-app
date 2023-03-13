@@ -60,10 +60,11 @@
                 <div class="card LikeCard border-0 rounded-5">
                     <div class="card-body rounded-4 p-4">
                         <div class="row align-items-center g-4">
-                            <div class="col-12 d-flex justify-content-end"><a href="edit-info.html" class="h-25px d-inline-flex unverifieduser"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></a></div>
+                            <div class="col"><a href="index.html" class="h-md-25px h-20px d-inline-flex unverifieduser"><img src="assets/img/icon/leftarrow.svg" class="h-100" alt=""></a></div>
+                            <div class="col-auto"><a href="edit-info.html" class="h-md-25px h-20px d-inline-flex unverifieduser"><img src="assets/img/icon/edit.svg" class="h-100" alt=""></a></div>
                             <div class="col-12">
                                 <div class="liveUserImg mb-4 w-md-130px h-md-130px w-100px h-100px rounded-circle mx-auto position-relative border border-3"><img src="assets/img/index/profilePic.jpg" class="rounded-circle h-100 w-100" alt="">
-                                    <div class="position-absolute bottom-0 end-0 bg-white rounded-circle w-30px h-30px d-flex align-items-center justify-content-center">
+                                    <div class="position-absolute bottom-0 end-n7px bg-white rounded-circle w-30px h-30px d-flex align-items-center justify-content-center">
                                         <a href="javasctip:;" class="h-25px d-inline-flex editbutton"  data-bs-toggle="modal" data-bs-target="#exampleprofileverified"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></a>
                                     </div>
                                 </div>
@@ -71,29 +72,504 @@
                             </div>
                             <div class="col-12 px-0">
                                 <div class="row mx-0 align-items-center justify-content-center">
-                                    <div class="col-auto px-0">
+                                    <div class="col-auto px-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                                         <div class="row mx-0 align-items-center">
-                                            <div class="col-auto pe-0"><div class="w-md-40px w-30px h-md-40px h-30px p-md-2 p-1 bg-light rounded-circle"><img src="assets/img/icon/setting.svg" class="w-100 h-100" alt=""></div></div>
+                                            <div class="col-auto pe-0"><div class="w-md-40px w-30px h-md-40px h-30px p-md-2 p-1 bg-light rounded-circle d-flex"><img src="assets/img/icon/setting.svg" class="w-100 h-100" alt=""></div></div>
                                             <div class="col text-muted fs-md-14 fs-12 fw-600">Setting</div>
                                         </div>
                                     </div>
                                     <div class="col-auto px-0">
                                         <div class="row mx-0 align-items-center">
-                                            <div class="col-auto pe-0"><div class="w-md-40px w-30px h-md-40px h-30px p-md-2 p-1 bg-light rounded-circle"><img src="assets/img/icon/camera.svg" class="w-100 h-100" alt=""></div></div>
+                                            <div class="col-auto pe-0"><div class="w-md-40px w-30px h-md-40px h-30px p-md-2 p-1 bg-light rounded-circle d-flex"><img src="assets/img/icon/camera.svg" class="w-100 h-100" alt=""></div></div>
                                             <div class="col text-muted fs-md-14 fs-12 fw-600">Add Media</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col contentscard text-nowrap overflow-hidden">
-                                
+                            <div class="col-12">
+                                <div class="progress h-15px" role="progressbar" aria-label="Animated striped example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated h-15px fs-10 bg-theme2 rounded-pill" style="width: 35%">35%</div>
+                                </div>
                             </div>
+                            <div class="col-12 text-center"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">Get Deting Plans</button></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+        <!-- *?Offcanvas Of Verified Dating -->
+        <div class="offcanvas datingPrivecyOffcanvas border-0 offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <!-- *000 -->
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
+                <button type="button" class="btn-close ms-auto border-0 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body contentForm">
+                <form action="" class="row g-4 form">
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Dating App Packages...</span></div>
+                    <div class="col-12">
+                        <div class="card LikeCard matchCard border-0 rounded-5">
+                            <div class="card-body rounded-4 p-4">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="liveUserImg h-md-40px h-30"><img src="assets/img/header/logo.svg" class=" h-100" alt=""></div>
+                                    </div>
+                                    <div class="col contentscard text-nowrap overflow-hidden">
+                                        <h5 class="card-title text-black fs-14 fw-600 m-0 overflow-hidden w-90">Basic Plan</h5>
+                                        <div class="w-95 text-truncate"><a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link ">Priority Likes, See who Likes you</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card LikeCard matchCard border-0 platinumcard rounded-5">
+                            <div class="card-body rounded-4 p-4">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="liveUserImg h-md-40px h-30"><img src="assets/img/header/logo.svg" class=" h-100" alt=""></div>
+                                    </div>
+                                    <div class="col contentscard text-nowrap overflow-hidden">
+                                        <h5 class="card-title text-theme2 fs-14 fw-600 m-0 overflow-hidden w-90">Pletinum Plan</h5>
+                                        <div class="w-95 text-truncate"><a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link ">Priority Likes, See who Likes you & More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card LikeCard matchCard border-0 goldcard rounded-5">
+                            <div class="card-body rounded-4 p-4">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="liveUserImg h-md-40px h-30"><img src="assets/img/header/logo.svg" class=" h-100" alt=""></div>
+                                    </div>
+                                    <div class="col contentscard text-nowrap overflow-hidden">
+                                        <h5 class="card-title text-theme1 fs-14 fw-600 m-0 overflow-hidden w-90">GOLD Plan</h5>
+                                        <div class="w-95 text-truncate"><a href="javascript:;" class="text-decoration-none fs-13 text-muted stretched-link ">See Who Likes You & More!</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Account Settings</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col fs-md-14 fs-12">Manage Payment Account</div>
+                            <div class="col-auto"><div class="h-13px rightarrowimg d-flex"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col-6 fs-md-14 fs-12">Email</div>
+                            <div class="col-6 d-flex align-items-center justify-content-end"><span class="fs-md-14 fs-12 text-truncate">pooja1234@gmail.com</span><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col-6 fs-md-14 fs-12">Phone Number</div>
+                            <div class="col-6 d-flex align-items-center justify-content-end"><span class="fs-md-14 fs-12 text-truncate">919876543210</span><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="modal" data-bs-target="#examplerestore">
+                            <div class="col fs-md-14 fs-12">Restore Purchases</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="modal" data-bs-target="#examplepromocode">
+                            <div class="col fs-md-14 fs-12">Promo Code</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-14 fs-12">Verified Phone Number and Email help secure your account.</div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Discovery Settings</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="modal" data-bs-target="#examplelocation">
+                            <div class="col-6 fs-md-14 fs-12">Location</div>
+                            <div class="col-6 d-flex align-items-center justify-content-end"><div class="fs-md-14 fs-12 text-truncate">Block A, Vaishali Nagar, Jaipur, Rajasthan</div><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col-6 fs-md-14 fs-12">Looking for</div>
+                            <div class="col-6 d-flex align-items-center justify-content-end"><span class="fs-md-14 fs-12 text-truncate">Everyone</span><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpu-lable mb-2">
+                            <div class="col fs-md-14 fs-12">Age Preference</div>
+                            <div class="col-auto fs-md-14 fs-12 text-end">18 - <span>25</span></div>
+                            <div class="col-12 input_range my-2"><input type="range" class="w-100 rangslider" min="18" max="100" value="25" step="1" id="range"></div>
+                            <div class="col-12 mb-2">
+                                <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                    <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="showpepole">Only show people in this range</label></div>
+                                    <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="showpepole">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                    <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="global">Global</label></div>
+                                    <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="global">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpu-lable mb-2">
+                            <div class="col fs-md-14 fs-12">Distance Preference</div>
+                            <div class="col-auto fs-md-14 fs-12 text-end"><span>80 KM.</span></div>
+                            <div class="col-12 input_range my-2"><input type="range" class="w-100 rangslider" min="2" max="150" value="80" step="1" id="range"></div>
+                            <div class="col-12 mb-2">
+                                <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                    <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="showpepoles">Only show people in this range</label></div>
+                                    <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="showpepoles">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-14 fs-12">Going global will allow you to see people from around the world after you’ve run out of profiles nearby.</div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Control Who You See</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 g-3">
+                            <div class="col-12 fs-md-14 fs-12"><div class="pe-4 controlstab active">See the most recently active people first <div class="fs-md-12 fs-10 text-muted">See the most recently active people first </div></div></div>
+                            <div class="col-12 fs-md-14 fs-12"><div class="pe-4 controlstab">Balanced Recommendations <div class="fs-md-12 fs-10 text-muted">See the most relevant people to you (default)</div></div></div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Control Who Sees You</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 g-3">
+                            <div class="col-12 fs-md-14 fs-12"><div class="pe-4 controlstab active">Only People I've Liked <div class="fs-md-12 fs-10 text-muted">Only people I've right swiped will see me</div></div></div>
+                            <div class="col-12 fs-md-14 fs-12"><div class="pe-4 controlstab">Standard <div class="fs-md-12 fs-10 text-muted">Only be shown to certain types of people for individual recommendations</div></div></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                            <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="pepole">Show me on Dating</label></div>
+                            <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="pepole" checked>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-14 fs-12">While turned off, you will not be shown in the card stack. You can still see and chat with your matches.</div>
+                    <!-- *Block Contact -->
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col fs-md-14 fs-12">Block Contacts</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0"><div class="fs-md-14 fs-12 mt-2">Select people from your contact list that you don’t want to see or be seen by on Dating.</div></div>
+                    </div>
+                    <!-- *Block Contact End-->
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Web Profile</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col-6 fs-md-14 fs-12">Username</div>
+                            <div class="col-6 d-flex align-items-center justify-content-end"><span class="fs-md-14 fs-12 text-truncate">Claim Yours</span><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0"><div class="fs-md-14 fs-12 mt-2">Select people from your contact list that you don’t want to see or be seen by on Dating.</div></div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Read Receipts</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col fs-md-14 fs-12">Manage Read Receipts</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Activity Status</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col fs-md-14 fs-12">Recently Active Status</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Notifications</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col fs-md-14 fs-12">Email</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollinginner" aria-controls="offcanvasScrollinginner">
+                            <div class="col fs-md-14 fs-12">Push Notifications</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Help & Support</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative">
+                            <div class="col fs-md-14 fs-12">Help & Support</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/nextpage.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="text-decoration-none stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Safety</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative mb-2">
+                            <div class="col fs-md-14 fs-12">Community Guidelines</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/nextpage.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="text-decoration-none stretched-link"></a>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative mb-2">
+                            <div class="col fs-md-14 fs-12">Safety & Policy</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/nextpage.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="text-decoration-none stretched-link"></a>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative">
+                            <div class="col fs-md-14 fs-12">Safety Tips</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/nextpage.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="text-decoration-none stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Legal</span></div>
+                    <div class="col-12 px-0 bg-light py-4">
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative mb-2">
+                            <div class="col fs-md-14 fs-12">Cookie Policy</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/nextpage.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="text-decoration-none stretched-link"></a>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative mb-2">
+                            <div class="col fs-md-14 fs-12">Privacy Policy</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/nextpage.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="text-decoration-none stretched-link"></a>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative mb-2">
+                            <div class="col fs-md-14 fs-12">Terms of Service</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/nextpage.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="text-decoration-none stretched-link"></a>
+                        </div>
+                        <div class="row mx-0 align-items-center py-2 inpulable mb-2 position-relative">
+                            <div class="col fs-md-14 fs-12">Privacy Settings</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                            <a href="privacy-settings.html" class="text-decoration-none stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-12"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12 w-100">Log Out</button></div>
+                    <div class="col-12"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12 w-100">Delete Account</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- *?Offcanvas Of Verified Dating End -->
+        <!-- *Verified Datinf Inner-Offcanvas Start -->
+        <div class="offcanvas datingPrivecyOffcanvas border-0 offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrollinginner" aria-labelledby="offcanvasScrollinginnerLabel">
+            <div class="offcanvas-header shadow-none pb-0">
+                <!-- <h5 class="offcanvas-title" id="offcanvasScrollinginnerLabel">Offcanvas with body scrolling</h5> -->
+                <!-- <button type="button" class="btn-close ms-auto border-0 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                <button type="button" class="btn-close ms-auto border-0 shadow-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
+    
+            </div>
+            <div class="offcanvas-body">
+                <!-- *Manage Account Payment support -->
+                <form class="row g-3 form d-none">
+                    <div class="col-12 fs-md-14 fs-12 fw-500">You have no cards saved. To add a card, make a purchase.</div>
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Support Us</span></div>
+                    <div class="col-12 px-0">
+                        <div class="row mx-0 align-items-center py-2 inpulable position-relative">
+                            <div class="col fs-md-14 fs-12">Help & Support</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                            <a href="javascript:;" class="stretched-link text-decoration-none"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-14 fs-12 fw-500">Get answers to any of your questions about your purchases or payments.</div>
+                </form>
+                <!-- *Manage Account Payment support End-->
+                <!-- *Email Add. verefied -->
+                <form class="row g-3 form d-none">
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Email</span></div>
+                    <div class="col-12 px-0">
+                        <div class="row mx-0 align-items-center py-2 position-relative text-primary">
+                            <div class="col fs-md-14 fs-12">pooja1234@gmail.com</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-20px rightarrowimg"><img src="assets/img/icon/verified.svg" class="w-100" alt=""></div></div>
+                            <a href="javascript:;" class="stretched-link text-decoration-none"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-14 fs-12 fw-500">Verified Email Address</div>
+                </form>
+                <!-- *Email Add. verefied End-->
+                <!-- *Phone Number verefied -->
+                <form class="row g-3 form d-none">
+                    <div class="col-12 fs-md-18 fs-16 offcanvasheadings text-black fw-500"><span class="ps-3">Phone Number</span></div>
+                    <div class="col-12 px-0">
+                        <div class="row mx-0 align-items-center py-2 position-relative text-primary">
+                            <div class="col fs-md-14 fs-12">919876543210</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="w-20px rightarrowimg"><img src="assets/img/icon/verified.svg" class="w-100" alt=""></div></div>
+                            <a href="javascript:;" class="stretched-link text-decoration-none"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="row mx-0 align-items-center py-2 inpulable">
+                            <div class="col fs-md-14 fs-12">Update My Phone Number</div>
+                            <div class="col-auto d-flex align-items-center justify-content-end"><div class="h-13px rightarrowimg d-flex ms-1"><img src="assets/img/icon/rightarrow.svg" class="h-100" alt=""></div></div>
+                        </div>
+                    </div>
+                    <div class="col-12 fs-md-14 fs-12 fw-500">Verified Phone Number</div>
+                </form>
+                <!-- *Phone Number verefied End-->
+                <!-- *Discovery Settings -->
+                <div class="discover-settings contentForm d-none">
+                    <form action="" class="row g-4 form">
+                        <div class="col-12 fs-md-14 fs-12">You will see everyone in discovery.</div>
+                        <!-- ? Label will change according to selected gender.  -->
+                        <div class="col-12">
+                            <div class="row mx-0 align-items-center g-2">
+                                <div class="col form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad1" name="selector" class="form-check-input selector-item_radio">
+                                    <label for="rad1" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Male</label>
+                                </div>
+                                <div class="col form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad2" name="selector" class="form-check-input selector-item_radio">
+                                    <label for="rad2" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Female</label>
+                                </div>
+                                <div class="col form-check  custom-check px-1 selecotr-item">
+                                    <input type="radio" id="rad3" name="selector" class="form-check-input selector-item_radio" checked>
+                                    <label for="rad3" class="selector-item_label py-1 px-2 fs-md-14 fs-12 rounded-pill text-center w-100">Everyone</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="pepole00">Show me people of the same orientation first</label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="pepole00">
+                            </div>
+                        </div>
+                        <div class="col-12 fs-md-14 fs-12 fw-normal ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem veniam provident minima eum numquam! Dicta quas repellat facere impedit asperiores.</div>
+                    </form>
+                </div>
+                <!-- *Discovery Settings End -->
+                <!-- *Block Contact -->
+                <div class="block-settings contentForm d-none">
+                    <form action="" class="row g-4 form">
+                        <div class="col-12 fs-md-14 fs-12">Select people from your contact list that you don’t want to see or be seen by on Dating.</div>
+                        <div class="col-12 navTabPerent ">
+                            <ul class="nav navTabs nav-pills mb-3" id="block-pills-tab" role="tablist">
+                                <li class="nav-item w-100" role="presentation"><button class="nav-link rounded-0 text-black fw-600 fs-14 w-100 active" id="block-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#block-pills-profile" type="button" role="tab" aria-controls="block-pills-profile" aria-selected="false">Blocked</button></li>
+                                <li class="nav-item w-100" role="presentation"><button class="nav-link rounded-0 text-black fw-600 fs-14 w-100" id="block-pills-home-tab" data-bs-toggle="pill" data-bs-target="#block-pills-home" type="button" role="tab" aria-controls="block-pills-home" aria-selected="true">Contacts</button></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 tab-content" id="block-pills-tabContent">
+                            <div class="tab-pane fade" id="block-pills-home" role="tabpanel" aria-labelledby="block-pills-home-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-12 text-center mt-4"><button type="button" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">Add Contact</button></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show active" id="block-pills-profile" role="tabpanel" aria-labelledby="block-pills-profile-tab" tabindex="0">
+                                <div class="row  gap-3">
+                                    <div class="col-12 d-flex justify-content-center align-items-center"><div class="w-lg-150px w-md-130px w-sm-100px w-70px"><img src="assets/img/index/emptyvector.svg" class="w-100" alt=""></div></div>
+                                    <div class="col-12 fs-md-14 fs-12 text-muted text-center">Members signed in to Dating with the contact information you add here will be blocked.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- !Add Contact Form -->
+                    <form action="" class="row g-4 form">
+                        <div class="col-12 fs-md-14 fs-12 offcanvasheadings">
+                            <label for="name" class="mb-2"><span class="ps-3">Name</span></label>
+                            <input type="text" class="form-control px-0 text-black border-0 shadow-none rounded-0 fs-md-14 fs-12" placeholder="Your Name" id="name" required="">
+                        </div>
+                        <div class="col-12 fs-md-14 fs-12 offcanvasheadings">
+                            <label for="phone" class="mb-2"><span class="ps-3">Add A Phone Number</span></label>
+                            <input type="tel" class="form-control px-0 text-black border-0 shadow-none rounded-0 fs-md-14 fs-12" placeholder="Your phone Number" id="phone" required="">
+                        </div>
+                        <div class="col-12 fs-md-14 fs-12 offcanvasheadings">
+                            <label for="email" class="mb-2"><span class="ps-3">Email</span></label>
+                            <input type="email" class="form-control px-0 text-black border-0 shadow-none rounded-0 fs-md-14 fs-12" placeholder="Your email" id="email" required="">
+                        </div> 
+                        <div class="col-12 text-center"><button type="submit" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">SUBMIT</button></div>
+                    </form>
+                    <!-- !Add Contact Form End-->
+                </div>
+                <!-- *Block Contact End -->
+                <!-- *Web Profile -->
+                <div class="web-profile contentForm d-none">
+                    <!-- !Add Contact Form -->
+                    <form action="" class="row g-4 form">
+                        <div class="col-12 fs-md-14 fs-12 offcanvasheadings">
+                            <label for="username" class="mb-2"><span class="ps-3">Username</span></label>
+                            <div class="controlstab active">
+                                <input type="text" class="form-control ps-1 pe-4 text-black border-0 shadow-none rounded-0 fs-md-14 fs-12" placeholder="@ Your Username" id="username" required="">
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12">CONFIRM</button>
+                            <button type="submit" class="mainBtn px-sm-5 px-4 fs-md-14 fs-12 d-none">DELETE</button>
+                        </div>
+                    </form>
+                    <!-- !Add Contact Form End-->
+                </div>
+                <!-- *Web Profile End-->
+                <!-- *Read Receipts -->
+                <div class="contentForm d-none">
+                    <form action="" class="row g-4 form">
+                        <div class="col-12">
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="readreceipt">Send Read Receipts</label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="readreceipt">
+                            </div>
+                        </div>
+                        <div class="col-12 fs-md-14 fs-12 fw-normal text-muted">Turning this off will prevent any matches from activating read receipts in your conversation from this moment forward.</div>
+                    </form>
+                </div>
+                <!-- *Read Receipts End-->
+                <!-- *Recent Active -->
+                <div class="contentForm d-none">
+                    <form action="" class="row g-4 form">
+                        <div class="col-12">
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="reactive">Recently Active Status</label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="reactive" checked>
+                            </div>
+                        </div>
+                        <div class="col-12 fs-md-14 fs-12 fw-normal text-muted">Turning this off will prevent any matches from activating read receipts in your conversation from this moment forward.</div>
+                    </form>
+                </div>
+                <!-- *Recent Active End-->
+                <!-- *Notifications -->
+                <div class="contentForm">
+                    <form action="" class="row g-4 form d-none">
+                        <div class="col-12 fs-md-14 fs-12 offcanvasheadings"><span class="ps-3">Email</span></div>
+                        <div class="col-12 bg-light py-4">
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2 mb-3">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="message">Messages</label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="message" checked>
+                            </div>
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2 mb-3">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="match">New Matches</label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="match">
+                            </div>
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="proms">Promotions
+                                    <div class="fs-md-12 fs-10 text-muted">I want to receive news, updates, and offers from Dating</div>
+                                </label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="proms" checked>
+                            </div>
+                        </div>
+                        <div class="col-12 fs-md-14 fs-12 fw-normal text-muted">Control the emails you want to get — all of them, just the important stuff, or the bare minimum. You can always unsubscribe from the bottom of any email.</div>
+                    </form>
+                    <form action="" class="row g-4 form">
+                        <div class="col-12 fs-md-14 fs-12 offcanvasheadings"><span class="ps-3">Push Notifications</span></div>
+                        <div class="col-12 bg-light py-4">
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2 mb-3">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="messag">Messages
+                                    <div class="fs-md-12 fs-10 text-muted">Someone sent you a new message.</div>
+                                </label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="messag" checked>
+                            </div>
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2 mb-3">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="matchs">New Matches
+                                    <div class="fs-md-12 fs-10 text-muted">You just got a new match.</div>
+                                </label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="matchs" checked>
+                            </div>
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2 mb-3">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="Super">Super Likes
+                                    <div class="fs-md-12 fs-10 text-muted">You've been Super Liked.</div>
+                                </label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Super" checked>
+                            </div>
+                            <div class="form-check form-switch custom-switch p-0 d-flex align-items-start justify-content-between gap-2">
+                                <div class="w-85"><label class="form-check-label fs-md-14 fs-12 fw-500 text-black w-100" for="Likes">Message Likes
+                                    <div class="fs-md-12 fs-10 text-muted">Someone liked your message.</div>
+                                </label></div>
+                                <input class="form-check-input shadow-none w-md-40px w-33px h-md-20px h-17px" type="checkbox" role="switch" id="Likes" checked>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- *Notifications End-->
+    
+            </div>
+        </div>
+        <!-- *Verified Datinf Inner-Offcanvas End -->
+    
+    
     
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -82,7 +82,7 @@
                                 <div class="col-12 flex-fill h-100 overflow-hidden">
                                     <div class="h-100 leftcontentsideperent">
                                     <!-- *Match & Message Tabs Content -->
-                                        <div class="row mx-0 pb-4 pt-3 dnone messageAndmatch">
+                                        <div class="row mx-0 pb-4 pt-3 d-none messageAndmatch">
                                             <div class="col-12 navTabPerent ">
                                                 <ul class="nav navTabs  nav-pills mb-3 position-sticky zi-2 bg-white top-0px" id="pills-tab" role="tablist">
                                                 <li class="nav-item w-100" role="presentation">
@@ -167,7 +167,7 @@
                                     <!-- *Match & Message Tabs Content End -->
 
                                     <!-- *Category Tab Content Start -->
-                                        <div class="row mx-0 g-3 pb-4 pt-3 matchcardside d-none">
+                                        <div class="row mx-0 g-3 pb-4 pt-3 matchcardside dnone">
                                             <div class="col-12">
                                                 <div class="card LikeCard matchCard border-0 rounded-5">
                                                     <div class="card-body rounded-4 p-4">
@@ -370,8 +370,8 @@
                                 <!-- *Finding User Profie -->
                                 <div class="col-12 Finduseraccount h-100 dnone">
                                     <div class="position-relative innerchild">
-                                        <div class="matchuserimg liveuserProfile m-auto rounded-lg-5 rounded-0 position-relative"><img src="assets/img/index/profilePic2big.jpg" class="w-100 h-100 rounded-lg-5 rounded-0" alt="">
-                                            <div class="bufringIconPerent position-absolute bottom-20px end-20px">
+                                        <div class="matchuserimg liveuserProfile m-auto rounded-lg-5 rounded-0 position-relative"><img src="assets/img/index/profilePic3big.jpg" class="w-100 h-100 rounded-lg-5 rounded-0" alt="">
+                                            <div class="bufringIconPerent position-absolute bottom-20px end-20px d-lg-block d-none">
                                                 <button class="plusBtn shadow-none border-0 d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><img src="assets/img/icon/close.svg" class="w-lg-100 h-lg-100 w-80 h-80" alt=""></button>
                                                 <div class="collapse position-absolute end-0 bottom-60px" id="collapseExample">
                                                     <div class="card p-0 bg-transparent border-0 card-body">
@@ -385,8 +385,21 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="bufringIconPerent position-absolute bottom-20px end-20px d-lg-none d-block">
+                                                <div class="collapse position-absolute end-0 bottom-md-10px bottom-0px show" id="collapseExample">
+                                                    <div class="card p-0 bg-transparent border-0 card-body">
+                                                        <ul class="list-unstyled m-0 p-0 d-flex flex-column align-items-center justify-content-between gap-2 bufringLists">
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/refresh.svg" class="w-sm-100 h-sm-100 w-80 h-80" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/close.svg" class="w-sm-100 h-sm-100 w-80 h-80" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/star.svg" class="w-sm-100 h-sm-100 w-80 h-80" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/heart.svg" class="w-sm-100 h-sm-100 w-80 h-80" alt=""></a></li>
+                                                            <li class="bufringIcon"><a href="javascript:;" class="bufringIconList text-decoration-none d-flex justify-content-center align-items-center w-40px h-40px rounded-circle p-2 bg-white"><img src="assets/img/icon/charg.svg" class="w-sm-100 h-sm-100 w-80 h-80" alt=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <!-- User Name & Location-->
-                                            <div class="position-absolute bottom-20px start-20px">
+                                            <div class="position-absolute bottom-lg-20px bottom-md-30px bottom-20px start-20px">
                                                 <div class="row mx-0 align-items-center">
                                                     <div class="col-12 px-0 d-flex align-items-center gap-2"><div class="text-truncate fs-lg-25 fs-md-20 fs-16 fw-600 text-white">Neha 004</div> <div class="h-25px d-inline-flex unverifieduser"><img src="assets/img/icon/verified.svg" class="h-100" alt=""></div></div>
                                                     <div class="col-12 px-0 fs-10 fw-normal text-white d-flex align-items-center gap-2"><span class="d-flex h-15px"><img src="assets/img/icon/location-white.svg" class="h-100" alt=""></span>5 KM Away</div>
@@ -433,7 +446,8 @@
                                         <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="index.html" class="linkTab active text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/home.svg" class="w-100" alt=""></a></div>
                                         <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/categorys.svg" class="w-100" alt=""></a></div>
                                         <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab position-relative text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/star2.svg" class="w-100" alt=""><span class="d-flex likes justify-content-center align-items-center w-20px h-20px fs-md-10 fs-8 text-white fw-500 p-2 rounded-circle position-absolute">35</span></a></div>
-                                        <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/chat.svg" class="w-100" alt=""></a></div>
+                                        <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab position-relative text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/chat.svg" class="w-100" alt=""><span class="d-flex likes justify-content-center align-items-center w-2px h-2px p-1 border border-2 border-white top-0 end-0 rounded-circle position-absolute chatAlert"></span></a></div>
+                                        <!-- <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="javascript:;" class="linkTab text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/chat.svg" class="w-100" alt=""></a></div> -->
                                         <div class="col bottombarTabs text-center d-flex align-items-center justify-content-center"><a href="profilepage.html" class="linkTab text-decoration-none w-md-40px w-30px h-md-40px h-30px d-flex"><img src="assets/img/icon/person.svg" class="w-100" alt=""></a></div>
                                     </div>
                                 </div>
@@ -502,11 +516,32 @@
                                                         <div class="col-auto ps-0"><div class="w-40px h-40px rounded-circle border border-1 border-muted ChatUserImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
                                                     </div>
                                                 </div>
+                                                <div class="col-12"><div class=" datetime text-center"><span class="bg-light px-3 position-relative zi-1 fs-md-10 fs-8 fw-normal text-muted">Today</span></div></div>
+                                                <div class="col-12 chatCard p-0">
+                                                    <div class="row mx-0">
+                                                        <div class="col-auto pe-0"><div class="w-40px h-40px rounded-circle border border-1 border-muted ChatUserImg"><img src="assets/img/index/profilePic2small.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                                        <div class="col-sm-8 col">
+                                                            <div class="chatUser fs-md-12 fs-10 text-muted fw-500 rounded p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odit mollitia alias, commodi eius eum!
+                                                                <div class="mt-2 fs-md-10 fs-8 fw-normal text-muted">9:00 AM</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 chatCard p-0">
+                                                    <div class="row mx-0 justify-content-end">
+                                                        <div class="col-sm-8 col">
+                                                            <div class="selfUser fs-md-12 fs-10 text-muted fw-500 rounded p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit impedit commodi voluptatibus asperiores soluta minima, fuga consequatur laborum magnam.
+                                                                <div class="mt-2 fs-md-10 fs-8 fw-normal text-muted text-end">9:15 AM</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto ps-0"><div class="w-40px h-40px rounded-circle border border-1 border-muted ChatUserImg"><img src="assets/img/index/profilePic.jpg" class="w-100 h-100 rounded-circle" alt=""></div></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 chatBoxFooter h-md-60px h-sm-50px h-45px bg-white d-flex align-items-center px-sm-2 px-0">
+                                <div class="col-12 chatBoxFooter h-lg-60px h-sm-50px h-45px bg-white d-flex align-items-center px-sm-2 px-0">
                                     <form class="row mx-0 w-100 align-items-center">
                                         <div class="col-auto d-flex align-items-center gap-3">
                                             <div class="upload">
@@ -515,7 +550,8 @@
                                             </div>
                                         </div>
                                         <div class="col px-0"><input type="text" class="form-control shadow-none w-100 border-0 fs-md-14 fs-12 fw-500 text-black" placeholder="Type your message here..."></div>
-                                        <div class="col-auto"><button class="btn btn-theme1 py-1 text-white fs-md-14 fs-12 fw-500">Send</button></div>
+                                        <!-- <div class="col-auto"><button class="btn btn-theme1 py-1 text-white fs-md-14 fs-12 fw-500">Send</button></div> -->
+                                        <div class="col-auto"><button class="btn btn-theme1 px-0 py-1 d-flex justify-content-center align-items-center h-lg-35px w-lg-50px h-25px w-40px"><img src="assets/img/icon/send.svg" alt="" class="h-100"></button></div>
                                     </form>
                                 </div>
                             </div>

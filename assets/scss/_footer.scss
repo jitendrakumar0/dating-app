@@ -59,7 +59,12 @@
                 & .likes {
                     top: -8px;
                     right: -9px;
-                    background-color: rgba($theme2, 0.5);
+                    background-color: rgba($theme2, 0.9);
+                    opacity: 0.5;
+                    transition: all 0.3s;
+                    &.chatAlert {
+                        background-color: lighten($success, 20);
+                    }
                 }
                 &:hover{
                     & img {
@@ -69,6 +74,9 @@
                 &.active{
                     & img {
                         filter: opacity(1);
+                    }
+                    & .likes {
+                        opacity: 1;
                     }
                 }
             }

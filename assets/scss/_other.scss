@@ -40,7 +40,7 @@
                             transition: all 0.3s;
                             filter: grayscale(1);
                         }
-                        &:hover{
+                        &:hover {
                             & img {
                                 filter: grayscale(0);
                             }
@@ -51,7 +51,6 @@
         }
     }
 }
-
 
 // ? Edit-info-offcanvas
 
@@ -98,5 +97,51 @@
 //             }
 //         }
 //     }
-    
+
 // }
+
+// ?########### [ premium-features ] ##########
+.premium-features {
+    & .innerSection {
+        & .iconImage {
+            transition: 0.3s;
+            box-shadow: 0px 0px 15px rgba($black, 0.3);
+            &:hover {
+                box-shadow: none;
+                background-color: rgba($black, 0.1) !important;
+            }
+        }
+    }
+}
+
+
+
+// ?########### [ Subscription Page ] ##########
+.subscriptionTable {
+    & .innersection {
+    & .table {
+        & thead {
+            & tr {
+                & th{
+                    &:first-child{
+                        min-width: 250px;
+                    }
+                }
+            }
+        }
+        & tbody {
+            & tr {
+                & td{
+                    &:first-child{
+                        min-width: 250px;
+                    }
+                }
+            }
+        }
+    }  
+    ::-webkit-scrollbar{
+        height: 2px !important;
+        opacity: 0;
+    }
+}
+}

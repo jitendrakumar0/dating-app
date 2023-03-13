@@ -146,6 +146,16 @@
           background: $theme2;
           transition: all 0.3s;
         }
+        &.goldsubcription {
+          &::before{
+            background: $warning;
+          }
+        }
+        &.premiumsubcription {
+          &::before{
+            background: $black;
+          }
+        }
       }
     }
   }
@@ -419,7 +429,7 @@
           height: 10px;
           border: 2px solid $white;
           top: 60%;
-          right: -2px;
+          right: -3.5px;
           background-color: lighten($success, 20);
           border-radius: 50px;
           transition: all 0.3s;
