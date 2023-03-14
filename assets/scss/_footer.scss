@@ -16,11 +16,19 @@
             }
         }
         & .innerLinks {
-            & .links {
-                transition: all 0.3s;
-                &:hover {
-                    color: $theme2 !important;
-                    font-weight: 700;
+            & ul {
+                & li {
+                    transition: all 0.3s;
+                    & .links {
+                        position: relative;
+                        transition: all 0.3s;
+                    }
+                    &:hover {
+                        transform: translateX(5px);
+                        & .links {
+                            color: $theme2 !important;
+                        }
+                    }
                 }
             }
             &.copyright {
