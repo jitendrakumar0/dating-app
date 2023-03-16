@@ -149,8 +149,8 @@
 // ?########### [ downloadsection Page ] ##########
 
 .downloadsection {
-    background-image: linear-gradient(90deg, rgba($black, 0.4) 30%, rgba($black, 0.4) 100%),url(../../assets/img/index/download-bg.jpg);
-    // background-image: linear-gradient(90deg, rgba($theme1, 0.2) 30%, rgba($theme2, 0.2) 100%);
+    // background-image: linear-gradient(90deg, rgba($black, 0.4) 30%, rgba($black, 0.4) 100%),url(../../assets/img/index/download-bg.jpg);
+    background-image: linear-gradient(90deg, rgba($theme1, 0.2) 30%, rgba($theme2, 0.2) 100%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,4 +165,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+// ?########### [ termsAndConditionPage Page ] ##########
+
+.termsAndConditionPage {
+    & .cardSection {
+        & .innersection {
+            & .LikeCard {
+                & .card-body {
+                    & .contentscard {
+                        & .loremcontent {
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
